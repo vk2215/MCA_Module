@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Compliance Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+
+    <style>
+        :root {
+            --bg: #f1f5f9;
+            --sidebar: #0f172a;
+            --paper-bg: #ffffff;
+            --accent: #2563eb;
+            --font-body: 'Times New Roman', Times, serif;
+            --font-ui: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background: var(--bg);
+            font-family: var(--font-ui);
+        }
+
+        #sidebar {
+            width: 260px;
+            background: var(--sidebar);
+            color: white;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        #sidebar h2 {
+            padding: 20px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .chap-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #cbd5e1;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .chap-item:hover {
+            background: #1e293b;
+            color: white;
+        }
+
+        #main {
+            margin-left: 260px;
+            padding: 40px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .paper {
+            background: var(--paper-bg);
+            padding: 60px 80px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+            font-family: var(--font-body);
+            font-size: 12pt;
+            line-height: 1.5;
+            color: #000;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            margin: 0 0 22px 0;
+        }
+
+        p {
+            margin: 0 0 8px 0;
+        }
+
+        .chapter-subtitle {
+            text-align: center;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+        }
+
+        .clause {
+            display: grid;
+            grid-template-columns: 3rem 1fr;
+            column-gap: 0.75rem;
+            align-items: start;
+            margin: 0 0 6px 0;
+        }
+
+        .clause-marker {
+            text-align: right;
+            padding-right: 0.4rem;
+            white-space: nowrap;
+        }
+
+        .clause-body {
+            min-width: 0;
+        }
+
+        /* Level 1: 1. */
+        .clause-l1 {
+            margin-left: 0rem;
+        }
+
+        /* Level 2: (1) */
+        .clause-l2 {
+            margin-left: 2.5rem;
+        }
+
+        /* Level 3: (a) */
+        .clause-l3 {
+            margin-left: 5rem;
+        }
+
+        /* Level 4: (i) */
+        .clause-l4 {
+            margin-left: 7.5rem;
+        }
+
+        /* Level 5: a. */
+        .clause-l5 {
+            margin-left: 10rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0;
+            table-layout: fixed;
+            border: 1.5px solid #000;
+        }
+
+        th,
+        td {
+            border: 1px solid #000 !important;
+            padding: 6px 7px;
+            text-align: left;
+            vertical-align: top;
+            font-size: 11pt;
+            line-height: 1.35;
+            word-break: normal;
+            overflow-wrap: break-word;
+        }
+
+        td p,
+        th p {
+            margin: 0;
+            text-align: left;
+        }
+
+        th {
+            background: #f8fafc;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        table th:nth-child(1),
+        table td:nth-child(1) {
+            width: 4%;
+        }
+
+        table th:nth-child(2),
+        table td:nth-child(2) {
+            width: 17%;
+        }
+
+        table th:nth-child(3),
+        table td:nth-child(3) {
+            width: 27%;
+        }
+
+        table th:nth-child(4),
+        table td:nth-child(4) {
+            width: 26%;
+        }
+
+        table th:nth-child(5),
+        table td:nth-child(5) {
+            width: 26%;
+        }
+
+        .hover-term {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration: underline solid var(--accent) !important;
+            cursor: help;
+            transition: background 0.2s;
+        }
+
+        .hover-term:hover {
+            background: #eff6ff;
+            text-decoration: underline solid var(--accent) !important;
+        }
+
+        .tippy-box {
+            background-color: #ffffff;
+            color: #0f172a;
+            border: 1px solid var(--accent);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .nested-pt {
+            display: block;
+            margin-top: 5px;
+            padding-left: 10px;
+            border-left: 2px solid var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <h2>Regulations</h2>
+        <div id="chapter-list">Loading...</div>
+    </div>
+
+    <div id="main">
+        <div id="content-area" class="paper">Select a chapter from the sidebar.</div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+        const md = window.markdownit({ html: true, linkify: true, typographer: false });
+
+        function isTableLine(line) {
+            return /^\s*\|/.test(line);
+        }
+
+        function cleanInlineMarkdown(line) {
+            return line.replace(/\*\*/g, '').trim();
+        }
+
+        function isHeadingLine(line) {
+            const plain = cleanInlineMarkdown(line);
+            return /^(CHAPTER\s+[IVXLC0-9]+|PRELIMINARY|PROCEDURE FOR REGISTRATION OF A MUTUAL FUND)$/i.test(plain);
+        }
+
+        function isClauseStart(line) {
+            const plain = cleanInlineMarkdown(line);
+            return /^\d+\./.test(plain)
+                || /^\(\d+\)/.test(plain)
+                || /^\(([ivxlcdm]+)\)/i.test(plain)
+                || /^\(([a-z]{1,3})\)/i.test(plain)
+                || /^[a-z]\./i.test(plain);
+        }
+
+        function preprocessLegalMarkdown(rawText) {
+            const lines = rawText.replace(/\r/g, '').split('\n');
+            const blocks = [];
+            let paragraph = '';
+            let tableLines = [];
+
+            const flushParagraph = () => {
+                if (paragraph.trim()) {
+                    blocks.push(paragraph.trim());
+                    paragraph = '';
+                }
+            };
+
+            const flushTable = () => {
+                if (tableLines.length) {
+                    blocks.push(tableLines.join('\n'));
+                    tableLines = [];
+                }
+            };
+
+            for (const sourceLine of lines) {
+                const line = sourceLine.replace(/\s+$/g, '');
+                const trimmed = line.trim();
+
+                if (!trimmed) {
+                    flushParagraph();
+                    flushTable();
+                    continue;
+                }
+
+                if (isTableLine(trimmed)) {
+                    flushParagraph();
+                    tableLines.push(trimmed);
+                    continue;
+                }
+
+                flushTable();
+
+                if (isHeadingLine(trimmed)) {
+                    flushParagraph();
+                    blocks.push(trimmed);
+                    continue;
+                }
+
+                if (isClauseStart(trimmed)) {
+                    flushParagraph();
+                    paragraph = trimmed;
+                    continue;
+                }
+
+                if (!paragraph) {
+                    paragraph = trimmed;
+                } else {
+                    paragraph += ` ${trimmed}`;
+                }
+            }
+
+            flushParagraph();
+            flushTable();
+            return blocks.join('\n\n');
+        }
+
+        function detectClauseClass(text) {
+            const plain = text.trim();
+
+            if (/^\d+\./.test(plain)) return 'clause-l1';
+            if (/^\(\d+\)/.test(plain)) return 'clause-l2';
+
+            // Roman numerals FIRST
+            if (/^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)/i.test(plain))
+                return 'clause-l4';
+
+            // Alphabetic (a), (b), (c)
+            if (/^\([a-z]\)/i.test(plain))
+                return 'clause-l3';
+
+            if (/^[a-z]\./i.test(plain))
+                return 'clause-l5';
+
+            return '';
+        }
+        function wrapClauseMarkers(container) {
+            const markerPattern = /^(\d+\.|\(\d+\)|\([a-z]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|[a-z]\.)\s+/i;
+
+            const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+            container.querySelectorAll('p.clause').forEach(p => {
+                if (p.querySelector('.clause-marker')) return;
+
+                const text = p.textContent.replace(/\s+/g, ' ').trim();
+                const textMatch = text.match(markerPattern);
+                if (!textMatch) return;
+
+                const marker = textMatch[1];
+                const escapedMarker = escapeRegExp(marker);
+
+                const html = p.innerHTML.trim();
+                const leadingMarkerRegex = new RegExp(
+                    `^(?:\\s|&nbsp;)*(?:<strong>)?\\s*${escapedMarker}\\s*(?:<\\/strong>)?(?:\\s|&nbsp;)*`,
+                    'i'
+                );
+
+                let bodyHtml = html.replace(leadingMarkerRegex, '').trim();
+                if (!bodyHtml) {
+                    bodyHtml = text.slice(textMatch[0].length).trim();
+                }
+
+                p.innerHTML = `<span class="clause-marker">${marker}</span><span class="clause-body">${bodyHtml}</span>`;
+            });
+        }
+
+        function postProcessLayout(container) {
+            container.querySelectorAll('p').forEach(p => {
+                const text = p.textContent.replace(/\s+/g, ' ').trim();
+                if (!text) return;
+
+                const clauseClass = detectClauseClass(text);
+                if (clauseClass) {
+                    p.classList.add('clause', clauseClass);
+                } else if (/^[A-Z\s]+$/.test(text) && text.length <= 60) {
+                    p.classList.add('chapter-subtitle');
+                }
+            });
+
+            container.querySelectorAll('table td, table th').forEach(cell => {
+                const cellText = cell.textContent.replace(/\s+/g, ' ').trim();
+                if (/^Col\d+$/i.test(cellText)) {
+                    cell.textContent = '';
+                }
+            });
+        }
+
+        fetch('/api/chapters')
+            .then(r => r.json())
+            .then(data => {
+                const list = document.getElementById('chapter-list');
+                list.innerHTML = data.map(c => `
+                    <li class="chap-item" onclick="loadChapter('${c}')">Chapter ${c}</li>
+                `).join('');
+            });
+
+        async function loadChapter(name) {
+            const area = document.getElementById('content-area');
+            area.innerHTML = '<em>Loading...</em>';
+
+            try {
+                const res = await fetch(`/api/content/${name}`);
+                const data = await res.json();
+                const normalized = preprocessLegalMarkdown(data.html_content);
+
+                area.innerHTML = `<h1>Chapter ${name}</h1>${md.render(normalized)}`;
+                postProcessLayout(area);
+                wrapClauseMarkers(area);
+                document.getElementById('main').scrollTop = 0;
+
+                tippy('.hover-term', {
+                    content: 'Loading...',
+                    allowHTML: true,
+                    theme: 'light-border',
+                    interactive: true,
+                    maxWidth: 400,
+                    onShow(instance) {
+                        const id = instance.reference.getAttribute('data-id');
+                        fetch(`/api/definition/${id}`).then(r => r.json()).then(d => {
+                            const formatted = d.verbatim.replace(/\((i+)\)/g, '<span class="nested-pt">($1)</span>');
+                            instance.setContent(`
+                                <div style="padding:5px;">
+                                    <strong style="color:#2563eb;">${d.term}</strong>
+                                    <div style="margin-top:5px;">${formatted}</div>
+                                </div>
+                            `);
+                        });
+                    }
+                });
+            } catch (err) {
+                area.innerHTML = 'Error loading chapter.';
+            }
+        }
+    </script>
+</body>
+
+</html>

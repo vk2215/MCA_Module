@@ -1,0 +1,479 @@
+[
+    {
+        "_id": "act",
+        "term": "Act",
+        "verbatim": "means the Securities and Exchange Board of India Act, 1992 (15 of 1992);",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "a"
+        }
+    },
+    {
+        "_id": "accredited_investor",
+        "term": "accredited investor",
+        "verbatim": "shall have the same meaning as assigned to it in clause (ab) of sub\nregulation (1) of regulation 2 of the Securities and Exchange Board of India (Alternative\nInvestment Funds) Regulations, 2012;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "b"
+        }
+    },
+    {
+        "_id": "advertisement",
+        "term": "advertisement",
+        "verbatim": "shall include any communication issued by or on behalf of the mutual fund \nor asset management company that may influence the investment decision of any investor\nor prospective investor;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "c"
+        }
+    },
+    {
+        "_id": "associate",
+        "term": "associate",
+        "verbatim": "includes, \u2014 \n(i) any person who directly or indirectly, either individually or in combination with\nrelatives, exercises control over the asset management company or the trustee or\nthe sponsor, as the case may be;\n(ii) any person, in respect of whom the asset management company or the trustee or\nthe sponsor, directly or indirectly, by itself, or in combination with other persons,\nexercises control; \n(iii) a company whose director, other than an independent director, or officer or\nemployee is also a director, or officer or employee of the asset management\ncompany; or\n(iv) in respect of a pooled investment vehicle including private equity funds that acts\nas a sponsor of a mutual fund, \na. an associate or group company of the manager of the pooled investment\nvehicle;\nb. any investee company in which ten percent or more of the shareholding is \nheld by the schemes or funds managed by manager of the pooled investment\nvehicle; or\nc. any investee company in which the pooled investment vehicle holds ten\npercent or more of the shareholding or where the directors of the pooled\ninvestment vehicle or corporate sponsor has representation on the board or\nright to nominate representatives on the board:\nProvided that the above definition of associate shall not be applicable to\nsponsors that invest in companies on behalf of the beneficiaries of insurance\npolicies or such other schemes specified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "d"
+        }
+    },
+    {
+        "_id": "asset_management_company",
+        "term": "asset management company",
+        "verbatim": "means a company incorporated under the Companies Act \n1956 (1 of 1956) or Companies Act, 2013 (18 of 2013) and approved by the Board under\nregulation 18;\n(f) \u2018broad based fund\u2019 shall mean the fund which has at least twenty investors and no single\ninvestor holds more than twenty-five percent of corpus of the fund;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "e"
+        }
+    },
+    {
+        "_id": "broker",
+        "term": "broker",
+        "verbatim": "means a stock broker as defined in the Securities and Exchange Board of India \n(Stock Brokers) Regulations, 2026;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "g"
+        }
+    },
+    {
+        "_id": "close-ended_scheme",
+        "term": "close-ended scheme",
+        "verbatim": "means any scheme of a mutual fund in which the period of maturity \nof the scheme is specified;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "h"
+        }
+    },
+    {
+        "_id": "control",
+        "term": "control",
+        "verbatim": "means, \u2014 \n(i) in the case of a company any person, either individually or together with persons\nacting in concert, who directly or indirectly own, control or hold shares carrying\nnot less than 10% of the voting rights of such company; or\n(ii) as between two companies, if the same person, either individually or together with\npersons acting in concert, directly or indirectly, own, control or hold shares\ncarrying not less than 10% of the voting rights of each of the two companies; or\n(iii) majority of the directors of any company who are in a position to exercise control\nover the asset management company;\n(j) Corporate Debt Market Development Fund shall have the same meaning assigned to it under\nclause (ga) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of\nIndia (Alternative Investment Funds) Regulations, 2012;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "i"
+        }
+    },
+    {
+        "_id": "custodian",
+        "term": "custodian",
+        "verbatim": "means a person who has been granted a certificate of registration to carry on the \nbusiness of custodian of securities under the Securities and Exchange Board of India\n(Custodian) Regulations, 1996;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "k"
+        }
+    },
+    {
+        "_id": "depository",
+        "term": "depository",
+        "verbatim": "means a body corporate as defined in the Depositories Act, 1996 (22 of 1996);",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "l"
+        }
+    },
+    {
+        "_id": "economic_offence",
+        "term": "economic offence",
+        "verbatim": "means an offence under the Fugitive Economic Offenders Act, 2018 \n(17 of 2018);",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "m"
+        }
+    },
+    {
+        "_id": "equity_oriented_schemes",
+        "term": "equity oriented schemes",
+        "verbatim": "means a scheme other than an index fund scheme or an exchange \ntraded fund, where, the scheme invests a minimum of sixty-five per cent of its net assets in\nequity and equity related instruments;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "n"
+        }
+    },
+    {
+        "_id": "equity_related_instruments",
+        "term": "equity related instruments",
+        "verbatim": "include convertible debentures, convertible preference shares, \nwarrants carrying the right to obtain equity shares, equity derivatives, units of Real Estate\nInvestment Trust and such other instrument as may be specified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "o"
+        }
+    },
+    {
+        "_id": "exchange_traded_fund",
+        "term": "exchange traded fund",
+        "verbatim": "means a mutual fund scheme that invests in securities in the same \nproportion of an index of securities in the manner specified by the Board and whose units\nare mandatorily listed and traded on a stock exchange platform;\n(q) \u2018exit load\u2019 means the charge or fee levied by the mutual fund at the time of redemption or \nrepurchase of units;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "p"
+        }
+    },
+    {
+        "_id": "fraud",
+        "term": "fraud",
+        "verbatim": "means a fraud as defined in clause (c) of sub-regulation (1) of regulation 2 of the\nSecurities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade\nPractices Relating to Securities Market) Regulations, 2003;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "r"
+        }
+    },
+    {
+        "_id": "free_reserve",
+        "term": "free reserve",
+        "verbatim": "shall have the same meaning as defined under Companies Act, 2013 (18 of \n2013);",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "s"
+        }
+    },
+    {
+        "_id": "fund_of_funds_scheme",
+        "term": "fund of funds scheme",
+        "verbatim": "means a mutual fund scheme that invests primarily in other schemes\nof the same mutual fund or other mutual funds;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "t"
+        }
+    },
+    {
+        "_id": "gold_exchange_traded_fund_scheme",
+        "term": "gold exchange traded fund scheme",
+        "verbatim": "shall mean a mutual fund scheme that invests primarily \nin gold or gold related instruments;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "u"
+        }
+    },
+    {
+        "_id": "gold_related_instrument",
+        "term": "gold related instrument",
+        "verbatim": "shall mean such instrument having gold as underlying, as may be \nspecified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "v"
+        }
+    },
+    {
+        "_id": "goods",
+        "term": "goods",
+        "verbatim": "means the goods notified by the Central Government under clause (bc) of section \n2 of the Securities Contracts (Regulation) Act, 1956 and forming the underlying of any\ncommodity derivative;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "w"
+        }
+    },
+    {
+        "_id": "group",
+        "term": "group",
+        "verbatim": "means a group as defined in clause (b) of the Explanation to Section 5 of the \nCompetition Act, 2002 (12 of 2003);",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "x"
+        }
+    },
+    {
+        "_id": "index_fund_scheme",
+        "term": "index fund scheme",
+        "verbatim": "means a mutual fund scheme that invests in securities in the same \nproportion of an index of securities in the manner specified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "y"
+        }
+    },
+    {
+        "_id": "infrastructure_debt_fund_scheme",
+        "term": "Infrastructure debt fund scheme",
+        "verbatim": "means a mutual fund scheme that invests primarily \n(minimum 90% of scheme assets) in the debt securities or securitized debt instrument of\ninfrastructure companies or infrastructure capital companies or infrastructure projects or\nspecial purpose vehicles which are created for the purpose of facilitating or promoting\ninvestment in infrastructure or other permissible assets in accordance with these regulations \nor bank loans in respect of completed and revenue generating projects of infrastructure\ncompanies or other projects or special purpose vehicles;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "z"
+        }
+    },
+    {
+        "_id": "sif_investment_strategy",
+        "term": "SIF Investment Strategy",
+        "verbatim": "means a scheme of mutual fund launched under the Specialized \nInvestment Fund;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "aa"
+        }
+    },
+    {
+        "_id": "invit",
+        "term": "InvIT",
+        "verbatim": "or \u201cInfrastructure Investment Trust\u201d shall have the meaning assigned in clause (za) \nof sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India\n(Infrastructure Investment Trusts) Regulations, 2014;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "bb"
+        }
+    },
+    {
+        "_id": "inspecting_officer",
+        "term": "inspecting officer",
+        "verbatim": "means any person appointed as such by the Board under Chapter XV;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "cc"
+        }
+    },
+    {
+        "_id": "liquid_net_worth",
+        "term": "Liquid net worth",
+        "verbatim": "means the net worth deployed in liquid assets which are unencumbered \nand shall include cash, bank deposits with Scheduled Commercial Banks, money market\ninstruments, Government Securities, Treasury bills, Repo on Government securities and any\nother instruments as specified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "dd"
+        }
+    },
+    {
+        "_id": "market_abuse",
+        "term": "market abuse",
+        "verbatim": "includes manipulative, fraudulent and unfair trade practices which may \ncontravene Section 12A of the Act or any of the provisions of the Securities and Exchange\nBoard of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities\nMarket) Regulations, 2003 or the Securities and Exchange Board of India (Prohibition of\nInsider Trading) Regulations, 2015;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ee"
+        }
+    },
+    {
+        "_id": "money_market_instruments",
+        "term": "money market instruments",
+        "verbatim": "includes commercial papers, commercial bills, treasury bills, \nGovernment securities having an unexpired maturity up to one year, call or notice money,\ncertificate of deposit, usance bills, and any other like instruments as specified by the Reserve\nBank of India;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ff"
+        }
+    },
+    {
+        "_id": "mutual_fund",
+        "term": "mutual fund",
+        "verbatim": "means a fund established in the form of a trust granted registration under \nregulation 3 and which raises monies through the sale of units to the public under one or\nmore schemes for investing in securities, money market instruments, gold or gold related\ninstruments, silver or silver related instruments and such other assets and instruments as may\nbe specified by the Board. Mutual fund schemes investing in exchange traded commodity\nderivatives can hold the underlying goods in case of physical settlement of such contracts;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "gg"
+        }
+    },
+    {
+        "_id": "mutual_fund_lite",
+        "term": "Mutual fund lite",
+        "verbatim": "or \u201cMF Lite\u201d means a mutual fund granted registration under Chapter X \nof these regulations and has only such index funds, exchange traded funds, fund of funds or\nother mutual fund schemes as may be specified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "hh"
+        }
+    },
+    {
+        "_id": "mutual_fund_lite_asset_management_company",
+        "term": "Mutual fund lite asset management company",
+        "verbatim": "or \u201cMF Lite asset management company\u201d \nmeans an asset management company of a mutual fund lite that has been granted approval\nunder Chapter X;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ii"
+        }
+    },
+    {
+        "_id": "mutual_fund_lite_scheme",
+        "term": "Mutual fund lite scheme",
+        "verbatim": "or \u201cMF Lite Scheme\u201d means any scheme launched by a mutual \nfund lite or any other eligible passive scheme as may be specified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "jj"
+        }
+    },
+    {
+        "_id": "nav",
+        "term": "NAV",
+        "verbatim": "or \u201cNet Asset Value\u201d shall mean the value computed in the manner provided in \nregulation 43 of these regulations;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "kk"
+        }
+    },
+    {
+        "_id": "net_worth",
+        "term": "Net worth",
+        "verbatim": "means the aggregate of the paid up capital and free reserves after deducting \ntherefrom, miscellaneous expenditure to the extent not written off or adjusted or deferred\nrevenue expenditure, intangible assets, accumulated losses and any loans and advances \ngiven by asset management company or MF Lite asset management company to either its\nsponsor, associates or group company of sponsor and its associates or group company;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ll"
+        }
+    },
+    {
+        "_id": "offer_document",
+        "term": "offer document",
+        "verbatim": "means scheme information document and statement of additional \ninformation by which a mutual fund invites public for subscription of units of a scheme;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "mm"
+        }
+    },
+    {
+        "_id": "open-ended_scheme",
+        "term": "open-ended scheme",
+        "verbatim": "means a scheme of a mutual fund which offers units for sale without \nspecifying any duration for redemption;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "nn"
+        }
+    },
+    {
+        "_id": "private_placement",
+        "term": "private placement",
+        "verbatim": "means any offer of units of a mutual fund scheme or invitation to \nsubscribe such units to a select group of persons, by a mutual fund (other than by way of\npublic offer) through issue of a placement memorandum and which is not being calculated\nto result, directly or indirectly in the units becoming available for subscription or purchase\nby persons other than those receiving the offer or invitation;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "oo"
+        }
+    },
+    {
+        "_id": "reit",
+        "term": "REIT",
+        "verbatim": "or \u201cReal Estate Investment Trust\u201d shall have the meaning assigned in clause (zm) \nof sub-regulation 1 of regulation 2 of the Securities and Exchange Board of India (Real\nEstate Investment Trusts) Regulations, 2014;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "pp"
+        }
+    },
+    {
+        "_id": "relative",
+        "term": "relative",
+        "verbatim": "means a person as defined in section 2(77) of the Companies Act, 2013 (18 of \n2013);",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "qq"
+        }
+    },
+    {
+        "_id": "scheme",
+        "term": "scheme",
+        "verbatim": "means a scheme of a mutual fund launched under Chapter V;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "rr"
+        }
+    },
+    {
+        "_id": "schedule",
+        "term": "schedule",
+        "verbatim": "means any of the schedules annexed to these regulations;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ss"
+        }
+    },
+    {
+        "_id": "securities_laws",
+        "term": "securities laws",
+        "verbatim": "means the Act, the Securities Contracts (Regulation) Act, 1956 (42 of \n1956), the Depositories Act, 1996 (22 of 1996) and the provision of any other law to the\nextent it is administered by the Board and the relevant rules and regulations made\nthereunder;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "tt"
+        }
+    },
+    {
+        "_id": "silver_exchange_traded_fund_scheme",
+        "term": "silver exchange traded fund scheme",
+        "verbatim": "shall mean a mutual fund scheme that invests \nprimarily in silver or silver related instruments;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "uu"
+        }
+    },
+    {
+        "_id": "silver_related_instrument",
+        "term": "silver related instrument",
+        "verbatim": "shall mean an instrument as may be specified by the Board, \nwhich has silver as the underlying product;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "vv"
+        }
+    },
+    {
+        "_id": "specialized_investment_fund",
+        "term": "Specialized Investment Fund",
+        "verbatim": "means a mutual fund as defined under clause (gg) of sub\nregulation (1) of regulation 2 of these regulations and subject to such other conditions as\nspecified under these regulations;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ww"
+        }
+    },
+    {
+        "_id": "sponsor",
+        "term": "sponsor",
+        "verbatim": "means any person who, acting individually or in concert with another body \ncorporate, establishes a mutual fund or a mutual fund lite;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "xx"
+        }
+    },
+    {
+        "_id": "statutory_levy",
+        "term": "statutory levy",
+        "verbatim": "means levy imposed by state government and central government;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "yy"
+        }
+    },
+    {
+        "_id": "to_be_listed_securities",
+        "term": "to be listed securities",
+        "verbatim": "means equity securities available for purchase or application or \ninvestment under anchor investment category or qualified institutional buyer category or\npublic issue in an initial public offer, or debt securities under primary market issuance, till\nits listing on a recognized stock exchange;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "zz"
+        }
+    },
+    {
+        "_id": "total_expense_ratio",
+        "term": "total expense ratio",
+        "verbatim": "means the ratio of total of all expenses charged to the investors of the \nscheme to the total asset under management of the scheme, as may be specified by the Board;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "aaa"
+        }
+    },
+    {
+        "_id": "trustees",
+        "term": "trustees",
+        "verbatim": "of the mutual fund shall mean the trustee company that holds the property of the \nmutual fund in trust for the benefit of the unit holders. Further, \u201ctrustees\u201d in case of mutual \nfund Lite shall mean a debenture trustee registered with the Board under the Securities and\nExchange Board of India (Debenture Trustees) Regulations, 1993; in case an existing\nsponsor transfers its eligible passive schemes from its existing mutual fund to a mutual fund\nlite in accordance with regulation 58, the MF Lite asset management company may appoint\nthe existing trustee of the mutual fund as the trustee of the mutual fund lite;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "bbb"
+        }
+    },
+    {
+        "_id": "unit",
+        "term": "unit",
+        "verbatim": "means the interest of the unit holders in a scheme representing one undivided share \nin the assets of a scheme; and",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ccc"
+        }
+    },
+    {
+        "_id": "unit_holder",
+        "term": "unit holder",
+        "verbatim": "means a person holding unit in a scheme of a mutual fund. \n(2) The words and expressions used and not defined in these regulations but defined in the Act, the \nSecurities Contracts (Regulation) Act, 1956 (42 of 1956), the Companies Act, 2013 (18 of\n2013), the Depositories Act, 1996 (22 of 1996), the Indian Trusts Act, 1882 or any rules or\nregulations made thereunder shall have the same meanings respectively assigned to them in\nthose Acts, rules or regulations made thereunder or any statutory modification or re-enactment\nthereto, as the case may be.",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "ddd"
+        }
+    }
+]
