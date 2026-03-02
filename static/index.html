@@ -93,47 +93,56 @@
             margin: 0 0 16px 0;
         }
 
+        .schedule-header,
+        .schedule-meta,
+        .schedule-subtitle {
+            display: block;
+            width: 100%;
+            text-align: center !important;
+            clear: both;
+        }
+
+        /* Base clause layout */
         .clause {
-            display: grid;
-            grid-template-columns: 3rem 1fr;
-            column-gap: 0.75rem;
-            align-items: start;
-            margin: 0 0 6px 0;
+            display: flex;
+            align-items: flex-start;
+            margin: 8px 0;
         }
 
+        /* Marker */
         .clause-marker {
+            width: 70px;
             text-align: right;
-            padding-right: 0.4rem;
+            padding-right: 10px;
             white-space: nowrap;
+            flex-shrink: 0;
         }
 
+        /* Body */
         .clause-body {
-            min-width: 0;
+            flex: 1;
+            line-height: 1.6;
         }
 
-        /* Level 1: 1. */
+        /* Indentation levels */
         .clause-l1 {
-            margin-left: 0rem;
+            margin-left: 0px;
         }
 
-        /* Level 2: (1) */
         .clause-l2 {
-            margin-left: 2.5rem;
+            margin-left: 30px;
         }
 
-        /* Level 3: (a) */
         .clause-l3 {
-            margin-left: 5rem;
+            margin-left: 60px;
         }
 
-        /* Level 4: (i) */
         .clause-l4 {
-            margin-left: 7.5rem;
+            margin-left: 90px;
         }
 
-        /* Level 5: a. */
         .clause-l5 {
-            margin-left: 10rem;
+            margin-left: 120px;
         }
 
         table {
@@ -327,23 +336,22 @@
             const plain = text.trim();
 
             if (/^\d+\./.test(plain)) return 'clause-l1';
+
             if (/^\(\d+\)/.test(plain)) return 'clause-l2';
 
-            // Roman numerals FIRST
-            if (/^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)/i.test(plain))
+
+            if (/^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii|xiii|xiv|xv)\)/i.test(plain))
                 return 'clause-l4';
 
-            // Alphabetic (a), (b), (c)
-            if (/^\([a-z]\)/i.test(plain))
+            if (/^\([a-z]{1,3}\)/i.test(plain))
                 return 'clause-l3';
 
-            if (/^[a-z]\./i.test(plain))
-                return 'clause-l5';
+            if (/^[a-z]\./i.test(plain)) return 'clause-l5';
 
             return '';
         }
         function wrapClauseMarkers(container) {
-            const markerPattern = /^(\d+\.|\(\d+\)|\([a-z]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|[a-z]\.)\s+/i;
+            const markerPattern = /^(\d+\.|\(\d+\)|\([a-z]{1,3}\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii|xiii|xiv|xv)\)|[a-z]\.)\s+/i;
 
             const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -412,6 +420,7 @@
                 const normalized = preprocessLegalMarkdown(data.html_content);
 
                 area.innerHTML = `<h1>Chapter ${name}</h1>${md.render(normalized)}`;
+
                 postProcessLayout(area);
                 wrapClauseMarkers(area);
                 document.getElementById('main').scrollTop = 0;

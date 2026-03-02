@@ -91,6 +91,34 @@ def get_chapter_content(chapter_name: str):
     full_text = "\n\n".join(content_blocks)
     lines = full_text.split("\n")
 
+    # This identifies "FIRST SCHEDULE", "CONTENTS OF THE TRUST DEED", etc.
+    processed_lines = []
+    for line in lines:
+        stripped = line.strip()
+        
+        # 1️⃣ MAIN SCHEDULE HEADERS (FIRST SCHEDULE, SECOND SCHEDULE, etc.)
+        if re.match(r'^(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH)\s+SCHEDULE$', stripped, re.IGNORECASE):
+            clean = re.sub(r'\s+', ' ', stripped).upper()
+            processed_lines.append(f'<div class="schedule-header">{clean}</div>')
+            continue
+
+        # 2️⃣ Regulation Reference Lines like [Regulation 10(1)]
+        if re.match(r'^\[?\s*Regulation\s+\d+.*?\]?$', stripped, re.IGNORECASE):
+            clean = re.sub(r'\s+', ' ', stripped)
+            processed_lines.append(f'<div class="schedule-meta">{clean}</div>')
+            continue
+
+        # 3️⃣ Schedule Subtitles
+        if re.match(r'^(CONTENTS OF THE|FEES|RESTRICTIONS ON|PROCEDURE|FORMAT|DISCLOSURE).*', stripped, re.IGNORECASE):
+            clean = re.sub(r'\s+', ' ', stripped).upper()
+            processed_lines.append(f'<div class="schedule-subtitle">{clean}</div>')
+            continue
+        
+        else:
+            processed_lines.append(line)
+
+    lines = processed_lines
+
     # 2. Table Separation Logic
     # Injects a newline if a non-table line immediately follows a table line.
     repaired_lines = []
