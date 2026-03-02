@@ -23,6 +23,7 @@ with open("chunks_chapter_wise.json", "r", encoding="utf-8") as f:
 def read_root():
     return FileResponse('static/index.html')
 
+'''
 @app.get("/api/chapters")
 def get_chapters_list():
     chapters = []
@@ -41,6 +42,34 @@ def get_chapters_list():
     
     # Sort them logically if they are Roman Numerals
     return sorted(list(chapters))
+'''
+
+
+@app.get("/api/chapters")
+def get_chapters_list():
+    # 1. Define Roman Numeral weights for logical sorting
+    roman_order = {
+        'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 
+        'IX': 9, 'X': 10, 'XI': 11, 'XII': 12, 'XIII': 13, 'XIV': 14, 'XV': 15, 
+        'XVI': 16, 'XVII': 17, 'XVIII': 18, 'XIX': 19, 'XX': 20
+    }
+    
+    chapters = []
+    seen = set()
+    for chunk in RAW_DATA.get('chunks', []):
+        metadata = chunk.get('Metadata') or chunk.get('metadata') or {}
+        chapter_raw = metadata.get('Chapter') or metadata.get('chapter')
+        
+        if chapter_raw:
+            # Clean "Chapter I" or "**Chapter I**" to just "I"
+            c_name = str(chapter_raw).replace("**", "").replace("Chapter", "").strip()
+            if c_name and c_name not in seen:
+                chapters.append(c_name)
+                seen.add(c_name)
+    
+    # 2. Sort by Roman weight; non-Roman names go to the end
+    return sorted(chapters, key=lambda x: roman_order.get(x, 99))
+
 
 @app.get("/api/content/{chapter_name}")
 def get_chapter_content(chapter_name: str):
