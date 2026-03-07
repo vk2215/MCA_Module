@@ -28,8 +28,11 @@ def extract_chapter_wise(file_path):
     # 2. Captures EVERYTHING (including (i), (ii), (iii)) 
     # 3. Stops ONLY when it sees a newline followed by the next alphabetical index like (b) or (ab)
     # The pattern (?=\n\s*\([a-z]{1,3}\)\s*[“\"']) is the key "Lookahead" stop.
-    regex_pattern = r"\(([a-z]{1,3})\)\s*[“\"']([^”\"']*)[\"”']\s+(.*?)(?=\n\s*\([a-z]{1,3}\)\s*[“\"']|\n\s*\*\*|\Z)"
     
+    #regex_pattern = r"\(([a-z]{1,3})\)\s*[“\"']([^”\"']*)[\"”']\s+(.*?)(?=\n\s*\([a-z]{1,3}\)\s*[“\"']|\n\s*\*\*|\Z)"
+    # Updated pattern to catch single quotes, double quotes, and different quote styles
+    regex_pattern = r"\(([a-z]{1,3})\)\s*[“\"'‘]([^”\"'’]*)[\"”'’]\s+(.*?)(?=\n\s*\([a-z]{1,3}\)\s*[“\"'‘]|\n\s*\*\*|\Z)"
+
     final_glossary = []
 
     print("Processing Chunks...")

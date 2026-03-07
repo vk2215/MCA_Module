@@ -38,10 +38,19 @@
     {
         "_id": "asset_management_company",
         "term": "asset management company",
-        "verbatim": "means a company incorporated under the Companies Act \n1956 (1 of 1956) or Companies Act, 2013 (18 of 2013) and approved by the Board under\nregulation 18;\n(f) \u2018broad based fund\u2019 shall mean the fund which has at least twenty investors and no single\ninvestor holds more than twenty-five percent of corpus of the fund;",
+        "verbatim": "means a company incorporated under the Companies Act \n1956 (1 of 1956) or Companies Act, 2013 (18 of 2013) and approved by the Board under\nregulation 18;",
         "metadata": {
             "chapter": "I",
             "index_marker": "e"
+        }
+    },
+    {
+        "_id": "broad_based_fund",
+        "term": "broad based fund",
+        "verbatim": "shall mean the fund which has at least twenty investors and no single\ninvestor holds more than twenty-five percent of corpus of the fund;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "f"
         }
     },
     {
@@ -119,10 +128,19 @@
     {
         "_id": "exchange_traded_fund",
         "term": "exchange traded fund",
-        "verbatim": "means a mutual fund scheme that invests in securities in the same \nproportion of an index of securities in the manner specified by the Board and whose units\nare mandatorily listed and traded on a stock exchange platform;\n(q) \u2018exit load\u2019 means the charge or fee levied by the mutual fund at the time of redemption or \nrepurchase of units;",
+        "verbatim": "means a mutual fund scheme that invests in securities in the same \nproportion of an index of securities in the manner specified by the Board and whose units\nare mandatorily listed and traded on a stock exchange platform;",
         "metadata": {
             "chapter": "I",
             "index_marker": "p"
+        }
+    },
+    {
+        "_id": "exit_load",
+        "term": "exit load",
+        "verbatim": "means the charge or fee levied by the mutual fund at the time of redemption or \nrepurchase of units;",
+        "metadata": {
+            "chapter": "I",
+            "index_marker": "q"
         }
     },
     {

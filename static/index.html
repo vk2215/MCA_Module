@@ -51,9 +51,11 @@
             border-bottom: 1px solid #1e293b;
         }
 
-        .chap-item:hover {
-            background: #1e293b;
-            color: white;
+        .chap-item.active {
+            background: #1e293b !important;
+            color: #ffffff !important;
+            border-left: 4px solid #ffffff;
+            font-weight: 600;
         }
 
         #main {
@@ -81,6 +83,7 @@
             text-transform: uppercase;
             font-size: 1.4rem;
             margin: 0 0 22px 0;
+            font-weight: bold;
         }
 
         p {
@@ -93,23 +96,64 @@
             margin: 0 0 16px 0;
         }
 
-        .schedule-header,
-        .schedule-meta,
-        .schedule-subtitle {
-            display: block;
-            width: 100%;
-            text-align: center !important;
-            clear: both;
+        .pdf-page-break {
+            margin-top: 40px;
         }
 
-        /* Base clause layout */
+        .sch-header {
+            text-align: center;
+            font-weight: 700;
+            font-size: 18pt;
+            margin: 30px 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .sch-subtitle {
+            text-align: center;
+            font-size: 13pt;
+            margin-bottom: 10px;
+        }
+
+        .clause-row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .marker {
+            flex: 0 0 55px;
+            font-weight: bold;
+        }
+
+        .body {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .l1 {
+            margin-left: 0;
+            font-weight: bold;
+        }
+
+        .l2 {
+            margin-left: 20px;
+        }
+
+        .l3 {
+            margin-left: 45px;
+        }
+
+        .l4 {
+            margin-left: 70px;
+        }
+
+
         .clause {
             display: flex;
             align-items: flex-start;
             margin: 8px 0;
         }
 
-        /* Marker */
+
         .clause-marker {
             width: 70px;
             text-align: right;
@@ -118,13 +162,13 @@
             flex-shrink: 0;
         }
 
-        /* Body */
+
         .clause-body {
             flex: 1;
             line-height: 1.6;
         }
 
-        /* Indentation levels */
+
         .clause-l1 {
             margin-left: 0px;
         }
@@ -203,16 +247,20 @@
         }
 
         .hover-term {
-            color: var(--accent);
-            font-weight: 600;
-            text-decoration: underline solid var(--accent) !important;
+            color: #000000 !important;
+            font-weight: normal !important;
+            text-decoration: none !important;
+            border-bottom: 1px solid #000000;
             cursor: help;
-            transition: background 0.2s;
         }
 
         .hover-term:hover {
-            background: #eff6ff;
-            text-decoration: underline solid var(--accent) !important;
+            background: #f8fafc;
+        }
+        .reg-bold-highlight {
+            font-weight: 800 !important;
+            background-color: #fff9c4 !important; 
+            color: #000 !important;
         }
 
         .tippy-box {
@@ -271,7 +319,10 @@
         }
 
         function preprocessLegalMarkdown(rawText) {
-            const lines = rawText.replace(/\r/g, '').split('\n');
+            const lines = rawText
+                .replace(/\r/g, '')
+                .replace(/\*\*/g, '')
+                .split('\n');
             const blocks = [];
             let paragraph = '';
             let tableLines = [];
@@ -412,6 +463,15 @@
 
         async function loadChapter(name) {
             const area = document.getElementById('content-area');
+            document.querySelectorAll('.chap-item').forEach(el => el.classList.remove('active'));
+
+            const items = document.querySelectorAll('.chap-item');
+            items.forEach(item => {
+                if (item.innerText.trim().endsWith(` ${name}`)) {
+                    item.classList.add('active');
+                }
+            });
+
             area.innerHTML = '<em>Loading...</em>';
 
             try {
