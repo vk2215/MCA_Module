@@ -1,114 +1,188 @@
 import json
 import os
+import time
 import re
-import google.generativeai as genai  # pip install google-generativeai
+import google.generativeai as genai
 from pymongo import MongoClient
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# 1. SETUP LLM
-genai.configure(api_key=os.getenv("INTERNAL_HDFC"))
-model = genai.GenerativeModel('gemini-2.5-flash') # Or gemini-pro
+# ---------------------------
+# 1. LLM SETUP
+# ---------------------------
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+model = genai.GenerativeModel("gemini-2.5-flash")
 
-# 2. SETUP DATABASE
+# ---------------------------
+# 2. DATABASE SETUP
+# ---------------------------
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client["compliance_db"]
 ref_collection = db["regulation_references"]
 
+
+# ---------------------------
+# CLEAN LLM RESPONSE
+# ---------------------------
+def clean_llm_json(text):
+    """
+    Removes markdown code blocks and extracts valid JSON.
+    """
+    text = text.strip()
+
+    # Remove ```json or ``` wrappers
+    text = re.sub(r"```json", "", text)
+    text = re.sub(r"```", "", text)
+
+    # Extract JSON array if extra text exists
+    match = re.search(r"\[.*\]", text, re.DOTALL)
+    if match:
+        text = match.group(0)
+
+    return text
+
+
+# ---------------------------
+# LLM EXTRACTION
+# ---------------------------
 def extract_regulations_with_llm(text):
-    """
-    Passes the chunk to the LLM and returns a clean list of regulation references.
-    """
-    # SYSTEM PROMPT
+
     prompt = f"""
-    Act as a legal document parser. Your goal is to extract ONLY formal citations and references to specific legal provisions OR references to OTHER external documents/Acts/Regulations.
-    
-    CRITICAL INSTRUCTIONS - WHAT TO EXTRACT:
-    - Formal citations to specific regulations, sub-regulations, sections, and clauses (e.g., 'regulation 7', 'sub-regulation (1)', 'clause (a) of regulation 4').
-    - ALL formal references to EXTERNAL documents, Acts, or Regulations (e.g., 'Securities and Exchange Board of India Act, 1992', 'Companies Act, 2013', 'Registration Act, 1908').
-    - References to specific points or notes ONLY if they are part of a formal provision citation.
+You are a legal citation parser.
 
-    CRITICAL INSTRUCTIONS - WHAT TO SKIP (IMPORTANT):
-    - SKIP generic legal terms and internal definitions like 'trust deed', 'mutual fund', 'sponsor', 'offer document', 'scheme', 'unitholders', 'asset management company'.
-    - SKIP internal document markers like 'First Schedule', 'Second Schedule', 'Schedule', 'Annexure', 'Appendix' unless they refer to an EXTERNAL document's schedule.
-    - SKIP internal structural headers like 'Explanation', 'Note', or 'Clause' when used as a header for current content.
-    - SKIP phrases like 'these regulations' or 'provided under regulation' without a specific number.
+Extract ONLY:
+1. Formal citations to regulations (regulation 7, sub-regulation (1), clause (a))
+2. References to external Acts or laws (Companies Act 2013, SEBI Act 1992)
+3. Explicit provision references
 
-    Return the results ONLY as a JSON list of objects with these keys: 
-    - 'reference_text': the full original citation string (e.g., 'the Registration Act, 1908', 'regulation 7').
-    - 'regulation_name': the name of the main regulation or document being referenced (e.g., 'Registration Act').
-    - 'year': the year mentioned in the reference, if any.
-    - 'reference_type': the type of reference ('regulation', 'section', 'clause', 'sub-clause', 'sub-regulation', 'point', 'note', 'schedule', 'act').
-    - 'point': the specific point or sub-clause number/identifier (e.g., '7', '1', 'ab').
+SKIP:
+- Definitions (mutual fund, sponsor, trustee etc.)
+- Internal headers (Explanation, Note)
+- Schedules unless external law
+- Phrases like "these regulations"
 
-    If no formal regulations or external cross-references are found, return an empty list []. Do not explain your reasoning.
-    
-    Text to process:
-    {text}
-    """
+Return ONLY JSON list.
+
+Format:
+[
+ {{
+  "reference_text": "...",
+  "regulation_name": "...",
+  "year": "...",
+  "reference_type": "...",
+  "point": "..."
+ }}
+]
+
+Text:
+{text}
+"""
 
     try:
-        # Requesting JSON specifically
+
         response = model.generate_content(
-            prompt, 
+            prompt,
             generation_config={"response_mime_type": "application/json"}
         )
-        
-        # Parse the JSON string from the LLM
-        return json.loads(response.text)
-    
+
+        cleaned = clean_llm_json(response.text)
+
+        data = json.loads(cleaned)
+
+        if isinstance(data, list):
+            return data
+        else:
+            return []
+
     except Exception as e:
-        print(f"LLM Error: {e}")
+        print("LLM parsing error:", e)
         return []
 
+
+# ---------------------------
+# MAIN PROCESSOR
+# ---------------------------
 def process_regulations(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
+
+    with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    all_extracted_refs = []
+    seen = set()
+    all_refs = []
 
-    print("Extracting regulation references using LLM...")
-    for chunk in data.get('chunks', []):
-        # Normalizing chapter value
+    print("Starting regulation extraction...\n")
+
+    for chunk in data.get("chunks", []):
+
         metadata = chunk.get("Metadata") or chunk.get("metadata") or {}
-        chapter = str(metadata.get("Chapter") or metadata.get("chapter", "Unknown")).replace("**", "").strip()
 
-        content = chunk.get("Content", "")
-        if not content.strip():
-            continue
+        chapter = str(
+            metadata.get("Chapter") or metadata.get("chapter") or "Unknown"
+        ).replace("**", "").strip()
 
-        print(f"Processing Chapter {chapter}...")
-        
-        # Only process Chapters I through VI as requested
+        # PROCESS ONLY CHAPTER I–VI
         if chapter not in ["I", "II", "III", "IV", "V", "VI"]:
-            print(f"Skipping Chapter {chapter} (out of range I-VI)...")
             continue
 
-        found_refs = extract_regulations_with_llm(content)
+        content = chunk.get("Content", "").strip()
 
-        for ref in found_refs:
+        if not content:
+            continue
+
+        print(f"Processing Chapter {chapter}")
+
+        refs = extract_regulations_with_llm(content)
+
+        for ref in refs:
+
+            reference_text = ref.get("reference_text", "").strip()
+
+            if not reference_text:
+                continue
+
+            # Deduplication key
+            key = (chapter, reference_text)
+
+            if key in seen:
+                continue
+
+            seen.add(key)
+
             entry = {
                 "chapter": chapter,
-                "reference_text": ref.get("reference_text", "").strip().replace("\n", " "),
+                "reference_text": reference_text,
                 "regulation_name": ref.get("regulation_name", "Unknown"),
                 "year": ref.get("year", ""),
+                "reference_type": ref.get("reference_type", ""),
+                "point": ref.get("point", "")
             }
-            
-            all_extracted_refs.append(entry)
-            
-            # Upsert into DB
+
+            all_refs.append(entry)
+
+            # UPSERT TO MONGODB
             ref_collection.update_one(
-                {"reference_text": entry["reference_text"], "chapter": chapter},
+                {
+                    "reference_text": entry["reference_text"],
+                    "chapter": chapter
+                },
                 {"$set": entry},
                 upsert=True
             )
 
-    # Local save for verification
-    with open("extracted_regulations.json", "w", encoding="utf-8") as f:
-        json.dump(all_extracted_refs, f, indent=4)
-    
-    print(f"Extraction complete. Found {len(all_extracted_refs)} references.")
+        # Avoid Gemini rate limit
+        time.sleep(0.7)
 
+    # SAVE LOCAL FILE
+    with open("extracted_regulations.json", "w", encoding="utf-8") as f:
+        json.dump(all_refs, f, indent=4)
+
+    print("\nExtraction Complete")
+    print(f"Total references found: {len(all_refs)}")
+
+
+# ---------------------------
+# ENTRY POINT
+# ---------------------------
 if __name__ == "__main__":
-    process_regulations('chunks_chapter_wise.json')
+    process_regulations("chunks_chapter_wise.json")

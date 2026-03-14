@@ -193,19 +193,19 @@
             width: 100%;
             border-collapse: collapse;
             margin: 18px 0;
-            table-layout: fixed;
+            table-layout: auto;
             border: 1.5px solid #000;
         }
 
         th,
         td {
             border: 1px solid #000 !important;
-            padding: 6px 7px;
+            padding: 6px 8px;
             text-align: left;
             vertical-align: top;
-            font-size: 11pt;
-            line-height: 1.35;
-            word-break: normal;
+            font-size: 10.5pt;
+            line-height: 1.4;
+            word-break: break-word;
             overflow-wrap: break-word;
         }
 
@@ -221,30 +221,6 @@
             text-align: center;
         }
 
-        table th:nth-child(1),
-        table td:nth-child(1) {
-            width: 4%;
-        }
-
-        table th:nth-child(2),
-        table td:nth-child(2) {
-            width: 17%;
-        }
-
-        table th:nth-child(3),
-        table td:nth-child(3) {
-            width: 27%;
-        }
-
-        table th:nth-child(4),
-        table td:nth-child(4) {
-            width: 26%;
-        }
-
-        table th:nth-child(5),
-        table td:nth-child(5) {
-            width: 26%;
-        }
 
         .hover-term {
             color: #000000 !important;
@@ -257,9 +233,10 @@
         .hover-term:hover {
             background: #f8fafc;
         }
+
         .reg-bold-highlight {
             font-weight: 800 !important;
-            background-color: #fff9c4 !important; 
+            background-color: #fff9c4 !important;
             color: #000 !important;
         }
 
@@ -446,8 +423,65 @@
 
             container.querySelectorAll('table td, table th').forEach(cell => {
                 const cellText = cell.textContent.replace(/\s+/g, ' ').trim();
+                // Clear cells that are only placeholder column names like Col1, Col2 etc.
                 if (/^Col\d+$/i.test(cellText)) {
-                    cell.textContent = '';
+                    cell.innerHTML = '';
+                }
+                // Clean **bold markers** left in table cells
+                cell.innerHTML = cell.innerHTML.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            });
+
+            // Auto-detect and minimize first column if it's all short (row numbers/markers)
+            container.querySelectorAll('table').forEach(table => {
+                const rows = Array.from(table.querySelectorAll('tr'));
+                if (!rows.length) return;
+
+                const numCols = rows[0].querySelectorAll('td, th').length;
+
+                rows.forEach(row => {
+                    const cells = Array.from(row.querySelectorAll('td, th'));
+                    if (cells.length < 2) return;
+
+                    // Spanning row detection: all non-empty cells contain the same text
+                    const nonEmpty = cells.filter(c => c.textContent.trim().length > 0);
+                    if (nonEmpty.length >= 2) {
+                        const firstText = nonEmpty[0].textContent.trim();
+                        const allSame = nonEmpty.every(c => c.textContent.trim() === firstText);
+                        if (allSame) {
+                            // Collapse into a single spanning cell
+                            const spanCell = cells[0];
+                            spanCell.setAttribute('colspan', numCols);
+                            spanCell.style.textAlign = 'left';
+                            spanCell.style.fontWeight = 'bold';
+                            spanCell.style.background = '#f0f4f8';
+                            // Remove the duplicate cells
+                            for (let c = 1; c < cells.length; c++) cells[c].remove();
+                            return; // skip first-column narrowing for this row
+                        }
+                    }
+
+                    // Single non-empty cell with empty others => spanning row too
+                    if (nonEmpty.length === 1 && cells.length > 1) {
+                        const spanCell = cells[0].textContent.trim() ? cells[0] : nonEmpty[0];
+                        spanCell.setAttribute('colspan', numCols);
+                        spanCell.style.textAlign = 'left';
+                        spanCell.style.fontWeight = 'bold';
+                        spanCell.style.background = '#f0f4f8';
+                        cells.forEach(c => { if (c !== spanCell) c.remove(); });
+                        return;
+                    }
+                });
+
+                // Auto-narrow first column only when all first cells are short markers
+                const firstCells = Array.from(table.querySelectorAll('tr td:first-child, tr th:first-child'))
+                    .filter(c => !c.hasAttribute('colspan'));
+                const allShort = firstCells.length > 0 && firstCells.every(c => c.textContent.trim().length <= 5);
+                if (allShort) {
+                    firstCells.forEach(c => {
+                        c.style.width = '5%';
+                        c.style.whiteSpace = 'nowrap';
+                        c.style.textAlign = 'center';
+                    });
                 }
             });
         }
