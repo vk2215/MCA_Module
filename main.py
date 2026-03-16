@@ -247,13 +247,14 @@ def get_chapter_content(chapter_name: str):
                 current_text = pattern.sub(r'<strong class="reg-bold-highlight">\g<0></strong>', current_text)
 
             # Apply Glossary Hover Terms
-            for item in glossary_items:
-                term = item['term']
-                t_id = item['_id']
-                # Avoid matching inside tags (like <strong> or <span>)
-                pattern = re.compile(rf'\b({re.escape(term)})\b(?![^<]*>)', re.IGNORECASE)
-                current_text = pattern.sub(f'<span class="hover-term" data-id="{t_id}">\\1</span>', current_text)
-            
+            if search_term != "I":
+                for item in glossary_items:
+                    term = item['term']
+                    t_id = item['_id']
+                    # Avoid matching inside tags (like <strong> or <span>)
+                    pattern = re.compile(rf'\b({re.escape(term)})\b(?![^<]*>)', re.IGNORECASE)
+                    current_text = pattern.sub(f'<span class="hover-term" data-id="{t_id}">\\1</span>', current_text)
+
             processed_lines.append(current_text)
 
     # 3. Smart Table Rebuilder
