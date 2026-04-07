@@ -1,0 +1,650 @@
+[
+    {
+        "chapter": "I",
+        "reference_text": "Securities and Exchange Board of India (Mutual Funds) Regulations, 2026",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Securities and Exchange Board of India Act, 1992 (15 of 1992)",
+        "regulation_name": "Securities and Exchange Board of India Act",
+        "year": "1992",
+        "reference_type": "Act",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (ab) of sub regulation (1) of regulation 2 of the Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012",
+        "regulation_name": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations",
+        "year": "2012",
+        "reference_type": "Regulation",
+        "point": "regulation 2, sub-regulation (1), clause (ab)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "Companies Act 1956 (1 of 1956)",
+        "regulation_name": "Companies Act",
+        "year": "1956",
+        "reference_type": "Act",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "Companies Act, 2013 (18 of 2013)",
+        "regulation_name": "Companies Act",
+        "year": "2013",
+        "reference_type": "Act",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "regulation 18",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": "regulation 18"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Securities and Exchange Board of India (Stock Brokers) Regulations, 2026",
+        "regulation_name": "Securities and Exchange Board of India (Stock Brokers) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (ga) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012",
+        "regulation_name": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations",
+        "year": "2012",
+        "reference_type": "Regulation",
+        "point": "regulation 2, sub-regulation (1), clause (ga)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Securities and Exchange Board of India (Custodian) Regulations, 1996",
+        "regulation_name": "Securities and Exchange Board of India (Custodian) Regulations",
+        "year": "1996",
+        "reference_type": "Regulation",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Depositories Act, 1996 (22 of 1996)",
+        "regulation_name": "Depositories Act",
+        "year": "1996",
+        "reference_type": "Act",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Fugitive Economic Offenders Act, 2018 (17 of 2018)",
+        "regulation_name": "Fugitive Economic Offenders Act",
+        "year": "2018",
+        "reference_type": "Act",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (c) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices Relating to Securities Market) Regulations, 2003",
+        "regulation_name": "Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices Relating to Securities Market) Regulations",
+        "year": "2003",
+        "reference_type": "Regulation",
+        "point": "regulation 2, sub-regulation (1), clause (c)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (bc) of section 2 of the Securities Contracts (Regulation) Act, 1956",
+        "regulation_name": "Securities Contracts (Regulation) Act",
+        "year": "1956",
+        "reference_type": "Act",
+        "point": "section 2, clause (bc)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (b) of the Explanation to Section 5 of the Competition Act, 2002 (12 of 2003)",
+        "regulation_name": "Competition Act",
+        "year": "2002",
+        "reference_type": "Act",
+        "point": "Section 5, Explanation, clause (b)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (za) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations, 2014",
+        "regulation_name": "Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations",
+        "year": "2014",
+        "reference_type": "Regulation",
+        "point": "regulation 2, sub-regulation (1), clause (za)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "Section 12A of the Act",
+        "regulation_name": "Securities and Exchange Board of India Act",
+        "year": "1992",
+        "reference_type": "Act",
+        "point": "Section 12A"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003",
+        "regulation_name": "Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations",
+        "year": "2003",
+        "reference_type": "Regulation",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015",
+        "regulation_name": "Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations",
+        "year": "2015",
+        "reference_type": "Regulation",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "regulation 3",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": "regulation 3"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "Chapter X of these regulations",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": "Chapter X"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "regulation 43 of these regulations",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": "regulation 43"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (zm) of sub-regulation 1 of regulation 2 of the Securities and Exchange Board of India (Real Estate Investment Trusts) Regulations, 2014",
+        "regulation_name": "Securities and Exchange Board of India (Real Estate Investment Trusts) Regulations",
+        "year": "2014",
+        "reference_type": "Regulation",
+        "point": "regulation 2, sub-regulation (1), clause (zm)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "section 2(77) of the Companies Act, 2013 (18 of 2013)",
+        "regulation_name": "Companies Act",
+        "year": "2013",
+        "reference_type": "Act",
+        "point": "section 2(77)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "Chapter V",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": "Chapter V"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Securities Contracts (Regulation) Act, 1956 (42 of 1956)",
+        "regulation_name": "Securities Contracts (Regulation) Act",
+        "year": "1956",
+        "reference_type": "Act",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "clause (gg) of sub regulation (1) of regulation 2 of these regulations",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": "regulation 2, sub-regulation (1), clause (gg)"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Securities and Exchange Board of India (Debenture Trustees) Regulations, 1993",
+        "regulation_name": "Securities and Exchange Board of India (Debenture Trustees) Regulations",
+        "year": "1993",
+        "reference_type": "Regulation",
+        "point": ""
+    },
+    {
+        "chapter": "I",
+        "reference_text": "regulation 58",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) Regulations",
+        "year": "2026",
+        "reference_type": "Regulation",
+        "point": "regulation 58"
+    },
+    {
+        "chapter": "I",
+        "reference_text": "the Indian Trusts Act, 1882",
+        "regulation_name": "Indian Trusts Act",
+        "year": "1882",
+        "reference_type": "Act",
+        "point": ""
+    },
+    {
+        "chapter": "II",
+        "reference_text": "regulation 5",
+        "regulation_name": "regulation 5",
+        "year": "",
+        "reference_type": "regulation",
+        "point": ""
+    },
+    {
+        "chapter": "II",
+        "reference_text": "regulation 57",
+        "regulation_name": "regulation 57",
+        "year": "",
+        "reference_type": "regulation",
+        "point": ""
+    },
+    {
+        "chapter": "II",
+        "reference_text": "regulation 3",
+        "regulation_name": "regulation 3",
+        "year": "",
+        "reference_type": "regulation",
+        "point": ""
+    },
+    {
+        "chapter": "II",
+        "reference_text": "Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+        "regulation_name": "Securities and Exchange Board of India (Intermediaries) Regulations",
+        "year": "2008",
+        "reference_type": "regulation",
+        "point": "Schedule II"
+    },
+    {
+        "chapter": "II",
+        "reference_text": "clause (e) of regulation 3",
+        "regulation_name": "regulation 3",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "clause (e)"
+    },
+    {
+        "chapter": "II",
+        "reference_text": "sub-regulation (1)",
+        "regulation_name": "regulation 6",
+        "year": "",
+        "reference_type": "provision",
+        "point": "sub-regulation (1)"
+    },
+    {
+        "chapter": "II",
+        "reference_text": "sub regulation (1)",
+        "regulation_name": "regulation 6",
+        "year": "",
+        "reference_type": "provision",
+        "point": "sub-regulation (1)"
+    },
+    {
+        "chapter": "II",
+        "reference_text": "clause (a)",
+        "regulation_name": "regulation 7",
+        "year": "",
+        "reference_type": "provision",
+        "point": "clause (a)"
+    },
+    {
+        "chapter": "III",
+        "reference_text": "Registration Act, 1908",
+        "regulation_name": "Registration Act",
+        "year": "1908",
+        "reference_type": "Act",
+        "point": null
+    },
+    {
+        "chapter": "III",
+        "reference_text": "regulation 7",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "Regulation",
+        "point": "7"
+    },
+    {
+        "chapter": "III",
+        "reference_text": "Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+        "regulation_name": "Securities and Exchange Board of India (Intermediaries) Regulations",
+        "year": "2008",
+        "reference_type": "Regulation",
+        "point": "Schedule II"
+    },
+    {
+        "chapter": "III",
+        "reference_text": "regulation 22",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "Regulation",
+        "point": "22"
+    },
+    {
+        "chapter": "III",
+        "reference_text": "clause (e) of sub-regulation (1) of regulation 5",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "Regulation",
+        "point": "regulation 5, sub-regulation (1), clause (e)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "sub-regulation (1) of regulation 5",
+        "regulation_name": "regulation 5",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (1)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "sub-regulation (1) of regulation 57",
+        "regulation_name": "regulation 57",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (1)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+        "regulation_name": "Securities and Exchange Board of India (Intermediaries) Regulations",
+        "year": "2008",
+        "reference_type": "external_regulation",
+        "point": "Schedule II"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clause (e) sub regulation (1) of regulation 5",
+        "regulation_name": "regulation 5",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (1), clause (e)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "sub-regulations (1)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "sub-regulation (1)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "sub-regulations (2)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "sub-regulation (2)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "sub-regulations (3)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "sub-regulation (3)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "sub-regulation (4) of regulation 16",
+        "regulation_name": "regulation 16",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (4)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "sub-clause (i)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "sub-clause (i)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clause (c) of sub-regulation (2) of regulation 16",
+        "regulation_name": "regulation 16",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (2), clause (c)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "regulation 16(4)",
+        "regulation_name": "regulation 16",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (4)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "regulation 15",
+        "regulation_name": "regulation 15",
+        "year": "",
+        "reference_type": "regulation",
+        "point": ""
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "regulation 16",
+        "regulation_name": "regulation 16",
+        "year": "",
+        "reference_type": "regulation",
+        "point": ""
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clause (b)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "clause (b)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "Securities and Exchange Board of India (Registrars to an Issue and Share Transfer Agents) Regulations, 2025",
+        "regulation_name": "Securities and Exchange Board of India (Registrars to an Issue and Share Transfer Agents) Regulations",
+        "year": "2025",
+        "reference_type": "external_regulation",
+        "point": ""
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clause (a)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "clause (a)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clause (iv) of sub-regulation (2) of regulation 22",
+        "regulation_name": "regulation 22",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (2), clause (iv)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clauses (i)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "clause (i)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clauses (ii)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "clause (ii)"
+    },
+    {
+        "chapter": "IV",
+        "reference_text": "clause (e) of sub-regulation (1) of regulation 5",
+        "regulation_name": "regulation 5",
+        "year": "",
+        "reference_type": "regulation",
+        "point": "sub-regulation (1), clause (e)"
+    },
+    {
+        "chapter": "V",
+        "reference_text": "sub-regulation (1)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "(1)"
+    },
+    {
+        "chapter": "V",
+        "reference_text": "Securities and Exchange Board of India (Mutual Funds) (Amendment) Regulations, 2009",
+        "regulation_name": "Securities and Exchange Board of India (Mutual Funds) (Amendment) Regulations",
+        "year": "2009",
+        "reference_type": "regulation",
+        "point": ""
+    },
+    {
+        "chapter": "V",
+        "reference_text": "sub-regulation (4)",
+        "regulation_name": "",
+        "year": "",
+        "reference_type": "provision",
+        "point": "(4)"
+    },
+    {
+        "chapter": "V",
+        "reference_text": "Securities and Exchange Board of India (Depositories and Participants) Regulations, 2018",
+        "regulation_name": "Securities and Exchange Board of India (Depositories and Participants) Regulations",
+        "year": "2018",
+        "reference_type": "regulation",
+        "point": ""
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "sub-regulation (4) of regulation 30",
+        "regulation_name": "regulation 30",
+        "year": null,
+        "reference_type": "regulation",
+        "point": "sub-regulation (4)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "sub-regulation (2)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "sub-regulation (2)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clause (a)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "clause (a)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clause (b)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "clause (b)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clause (c)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "clause (c)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clause (a) of sub-regulation (2)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "clause (a) of sub-regulation (2)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "sub-regulation (3)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "sub-regulation (3)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "sub-regulation (4)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "sub-regulation (4)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clause (b) of sub-regulation (3) of regulation 36",
+        "regulation_name": "regulation 36",
+        "year": null,
+        "reference_type": "regulation",
+        "point": "clause (b) of sub-regulation (3)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "sub-regulation (2) of regulation 36",
+        "regulation_name": "regulation 36",
+        "year": null,
+        "reference_type": "regulation",
+        "point": "sub-regulation (2)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "sub-regulation (3) of regulation 36",
+        "regulation_name": "regulation 36",
+        "year": null,
+        "reference_type": "regulation",
+        "point": "sub-regulation (3)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "sub-regulation (4) of regulation 36",
+        "regulation_name": "regulation 36",
+        "year": null,
+        "reference_type": "regulation",
+        "point": "sub-regulation (4)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clauses (a) and (b) of sub-regulation (2) of regulation 36",
+        "regulation_name": "regulation 36",
+        "year": null,
+        "reference_type": "regulation",
+        "point": "clauses (a) and (b) of sub-regulation (2)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clause (c) of sub-regulation (2) of regulation 36",
+        "regulation_name": "regulation 36",
+        "year": null,
+        "reference_type": "regulation",
+        "point": "clause (c) of sub-regulation (2)"
+    },
+    {
+        "chapter": "VI",
+        "reference_text": "clause (e) of sub-regulation (1)",
+        "regulation_name": null,
+        "year": null,
+        "reference_type": "provision",
+        "point": "clause (e) of sub-regulation (1)"
+    }
+]

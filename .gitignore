@@ -1,0 +1,8 @@
+.env
+__pycache__
+.venv
+venv/
+logs/
+*.log
+backend/case1_CTR/email_module/credentials/credentials.json
+backend/case1_CTR/email_module/credentials/token.pickle

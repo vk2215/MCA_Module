@@ -1,0 +1,623 @@
+[
+  {
+    "reference": "Securities and Exchange Board of India (Mutual Funds) Regulations, 2026",
+    "sub_reference": "",
+    "sentence": "These regulations may be called the Securities and Exchange Board of India (Mutual Funds) Regulations, 2026.",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Mutual_Funds)_Regulations,_2026.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/jan-2026/1768987928534.pdf",
+    "extracted_details": {
+      "extracted_definition": "1. Short title and commencement\n(1) These regulations may be called the Securities and Exchange Board of India (Mutual Funds) Regulations, 2026.\n(2) These regulations shall come into force with effect from April 1, 2026.",
+      "meaningful_context": "This provision establishes the official title and commencement date of the Securities and Exchange Board of India (Mutual Funds) Regulations, 2026. It is crucial for legal and regulatory citation, ensuring that all references to the regulations are accurate and that their effective date is clearly understood within the Indian financial regulatory framework.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) succeeded. The `sub_reference` indicated 'the main focus of the document', which directed the search to the introductory sections of the regulations. The exact short title and commencement provision was found in Chapter I, Regulation 1, on page 122. The extracted text precisely defines the official name and effective date of the regulations, directly addressing the core of the original context sentence.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "1",
+        "section_title": "Short title and commencement",
+        "page_number": 122,
+        "notified_date": "14/01/2026"
+      },
+      "source_url": "SEBI regulations (https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India Act, 1992 (15 of 1992)",
+    "sub_reference": "",
+    "sentence": "“Act” means the Securities and Exchange Board of India Act, 1992 (15 of 1992);",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_Act,_1992.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/acts/act15ac.pdf",
+    "extracted_details": {
+      "extracted_definition": "1. (1) This Act may be called the Securities and Exchange Board of India Act, 1992 .",
+      "meaningful_context": "Within the realm of Indian financial regulations, this provision is fundamental as it establishes the official name and legal identity of the primary legislation governing securities markets. It forms the bedrock for all subsequent definitions and regulatory powers outlined within the Act itself. When other legal documents or regulations refer to the \"Act\", this provision is the ultimate source identifying the specific legislation being referenced.",
+      "confidence": "High",
+      "reasoning": "Phase 2 (Heading Search) was successfully applied. Although 'Act' is not listed as a specific sub-clause definition under Section 2 ('Definitions'), Section 1(1) of the document explicitly provides the short title of 'This Act'. The original context sentence '“Act” means the Securities and Exchange Board of India Act, 1992 (15 of 1992);' is an external reference to this specific legislation. Therefore, Section 1(1) is the exact source provision within the document that defines the name of the 'Act' it represents, directly aligning with the name specified in the original context sentence.",
+      "location_metadata": {
+        "chapter_number": "CHAPTER I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "1.(1)",
+        "section_title": "Short title, extent & commencement.",
+        "page_number": 2,
+        "notified_date": null
+      },
+      "source_url": "[THE SECURITIES AND EXCHANGE BOARD OF INDIA ACT, 1992](https://www.sebi.gov.in/legal/acts/apr-1992/the-securities-and-exchange-board-of-india-act,-1992_10487.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012",
+    "sub_reference": "clause (ab) of sub- regulation (1) of regulation 2",
+    "sentence": "“accredited investor” shall have the same meaning as assigned to it in clause (ab) of sub- regulation (1) of regulation 2 of the Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Alternative_Investment_Funds)_Regulations,_2012.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2023/1679547306480.pdf",
+    "extracted_details": {
+      "extracted_definition": "(ab) “accredited investor” means any person who is granted a certificate of accreditation by an accreditation agency who, (i) in case of an individual, Hindu Undivided Family, family trust or sole proprietorship has: (A) annual income of at least two crore rupees; or (B) net worth of at least seven crore fifty lakh rupees, out of which not less than three crores seventy-five lakh rupees is in the form of financial assets; or (C) annual income of at least one crore rupees and minimum net worth of five crore rupees, out of which not less than two crore fifty lakh rupees is in the form of financial assets. (ii) in case of a body corporate, has net worth of at least fifty crore rupees; (iii) in case of a trust other than family trust, has net worth of at least fifty crore rupees; (iv) in case of a partnership firm set up under the Indian Partnership Act, 1932, each partner independently meets the eligibility criteria for accreditation: Provided that the Central Government and the State Governments, developmental agencies set up under the aegis of the Central Government or the State Governments, funds set up by the Central Government or the State Governments, qualified institutional buyers as defined under the Securities and Exchange Board of India (Issue of Capital and Disclosure Requirements) Regulations, 2018, Category I foreign portfolio investors, sovereign wealth funds and multilateral agencies and any other entity as may be specified by the Board from time to time, shall deemed to be an accredited investor and may not be required to obtain a certificate of accreditation;]",
+      "meaningful_context": "The \"accredited investor\" definition is crucial in Indian financial regulations, particularly for alternative investment funds. This definition outlines specific financial and experiential criteria for individuals, families, trusts, body corporates, and partnership firms to qualify as sophisticated investors. It also lists certain governmental and institutional entities that are automatically deemed accredited, streamlining their participation in alternative investment funds by exempting them from obtaining a separate accreditation certificate.",
+      "confidence": "High",
+      "reasoning": "The definition for \"accredited investor\" was directly found by navigating to `clause (ab) of sub-regulation (1) of regulation 2` as specified in the `sub_reference`. This corresponds to Phase 1 (Direct Match). The content fully defines the term. Footnote 1 on page 2 indicates this clause was inserted by an amendment effective 03-08-2021, which is used for the `notified_date`.",
+      "location_metadata": {
+        "chapter_number": "CHAPTER – I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions.",
+        "page_number": 2,
+        "notified_date": "03/08/2021"
+      },
+      "source_url": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012 (https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Companies Act 1956 (1 of 1956)",
+    "sub_reference": "",
+    "sentence": "“asset management company” means a company incorporated under the Companies Act 1956 (1 of 1956) or Companies Act, 2013 (18 of 2013) and approved by the Board under regulation 18;",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Companies_Act_1956.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/12807/1/the_companies_act,_1956_no._1_of_1956_date_01.01.1956.pdf",
+    "extracted_details": {
+      "extracted_definition": "(i) \"company\" means a company formed and registered under this Act or an existing company as defined in clause (ii) ;",
+      "meaningful_context": "The original context sentence defines an \"asset management company\" as one incorporated under the Companies Act, 1956. This extracted provision from Section 3(1)(i) of the Companies Act, 1956, provides the statutory definition of what constitutes a \"company\" under that Act. This is the foundational definition that an \"asset management company\" must satisfy to be considered incorporated under the 1956 Act.",
+      "confidence": "High",
+      "reasoning": "The 'Original context sentence' states that an 'asset management company' means a company 'incorporated under the Companies Act 1956 (1 of 1956)'. Following Phase 2 (Heading Search) of the Deep Search Navigation, I located Section 2, 'DEFINITIONS', which directs to Section 3(1)(i) for the definition of 'company'. Section 3(1)(i) explicitly defines 'company' as 'a company formed and registered under this Act or an existing company as defined in clause (ii)'. This directly addresses the 'incorporated under the Companies Act 1956' aspect of the original sentence's reference.",
+      "location_metadata": {
+        "chapter_number": null,
+        "chapter_title": "PART I : PRELIMINARY",
+        "section_number": "3",
+        "section_title": "DEFINITIONS OF \"COMPANY\", \"EXISTING COMPANY\", \"PRIVATE COMPANY\" AND \"PUBLIC COMPANY\"",
+        "page_number": 18,
+        "notified_date": null
+      },
+      "source_url": "Companies Act, 1956 (Act No. 1 of 1956) (https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html)"
+    }
+  },
+  {
+    "reference": "Companies Act, 2013 (18 of 2013)",
+    "sub_reference": "",
+    "sentence": "“asset management company” means a company incorporated under the Companies Act 1956 (1 of 1956) or Companies Act, 2013 (18 of 2013) and approved by the Board under regulation 18;",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Companies_Act,_2013.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf#search=Companies Act, 2013",
+    "extracted_details": {
+      "extracted_definition": "“(20) “company” means a company incorporated under this Act or under any previous company law;",
+      "meaningful_context": "The Companies Act, 2013, serves as the foundational legislation for company incorporation in India. While it does not specifically define an \"asset management company,\" it establishes the legal framework for any entity to be recognized as a \"company\" (which an asset management company inherently is). This definition from Section 2(20) is crucial as it underpins the legal identity of such financial entities, which must first be incorporated under corporate law before being approved by regulatory bodies like SEBI.",
+      "confidence": "High",
+      "reasoning": "The 'sub-reference to find' is 'asset management company'. The 'Original context sentence' states that an 'asset management company' *means a company incorporated under the Companies Act 1956 (1 of 1956) or Companies Act, 2013 (18 of 2013)'. The provided 'Source PDF text' is THE COMPANIES ACT, 2013. The Companies Act, 2013, does not contain a specific definition for 'asset management company'. However, the core of the reference in the original sentence points to the incorporation of a 'company' under this Act. Therefore, I located the definition of 'company' within Section 2 (Definitions) of the Companies Act, 2013. Section 2(20) defines \"company\" as one incorporated under this Act or any previous company law, directly addressing the incorporation aspect mentioned in the original context sentence. This constitutes a Phase 4 (Phrase/Substance Match) success, identifying the most relevant underlying provision within the given source document.",
+      "location_metadata": {
+        "chapter_number": "CHAPTER I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions.",
+        "page_number": 18,
+        "notified_date": "12/09/2013"
+      },
+      "source_url": "[Companies Act, 2013](https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Stock Brokers) Regulations, 2026",
+    "sub_reference": "",
+    "sentence": "“broker” means a stock broker as defined in the Securities and Exchange Board of India (Stock Brokers) Regulations, 2026;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Stock_Brokers)_Regulations,_2026.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/jan-2026/1767852346757.pdf",
+    "extracted_details": {
+      "extracted_definition": "(w) “stock broker” means a person having trading rights in any recognised stock exchange and includes a trading member;",
+      "meaningful_context": "This definition of \"stock broker\" is crucial for identifying entities authorized to conduct trading activities on recognized stock exchanges in India. It clearly delineates the primary subjects of the Securities and Exchange Board of India (Stock Brokers) Regulations, 2026, by including those with trading rights and trading members. This clarification is foundational for regulating the responsibilities and obligations of such market participants.",
+      "confidence": "High",
+      "reasoning": "Phase 2 (Heading Search) succeeded. The `Subject Term` \"stock broker\" was found under the \"Definitions\" section, specifically Regulation 2(1)(w), of the Securities and Exchange Board of India (Stock Brokers) Regulations, 2026. The extracted text directly defines a stock broker, which is precisely what the `Original context sentence` refers to for the definition of 'broker' within these regulations.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2(1)(w)",
+        "section_title": "Definitions",
+        "page_number": 29,
+        "notified_date": "07/01/2026"
+      },
+      "source_url": "[SEBI regulations](https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012",
+    "sub_reference": "clause (ga) of sub-regulation (1) of regulation 2",
+    "sentence": "Corporate Debt Market Development Fund shall have the same meaning assigned to it under clause (ga) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Alternative_Investment_Funds)_Regulations,_2012.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2025/1741064832837.pdf",
+    "extracted_details": {
+      "extracted_definition": "(ga) “Corporate Debt Market Development Fund” means an Alternative Investment Fund set up and making investments in terms of Chapter III-C of these regulations.",
+      "meaningful_context": "The extracted provision defines the \"Corporate Debt Market Development Fund\" within the framework of the Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012. It specifies that this fund is a type of Alternative Investment Fund (AIF) that operates and invests according to the terms outlined in Chapter III-C of the same regulations. This definition is crucial for understanding the scope and operational guidelines for such a fund within the Indian financial market.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) was successfully applied. The exact sub-reference, 'clause (ga) of sub-regulation (1) of regulation 2', was located on page 5 of the provided PDF text. The extracted text directly defines 'Corporate Debt Market Development Fund' as requested in the input.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2(1)(ga)",
+        "section_title": "Definitions.",
+        "page_number": 5,
+        "notified_date": "21/05/2012"
+      },
+      "source_url": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012(https://www.sebi.gov.in/legal/regulations/may-2012/securities-and-exchange-board-of-india-alternative-investment-funds-regulations-2012-last-amended-on-august-07-2024_58934.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Custodian) Regulations, 1996",
+    "sub_reference": "",
+    "sentence": "“custodian” means a person who has been granted a certificate of registration to carry on the business of custodian of securities under the Securities and Exchange Board of India (Custodian) Regulations, 1996;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Custodian)_Regulations,_1996.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2025/1758886606773.pdf",
+    "extracted_details": {
+      "extracted_definition": "(d) \"6[custodian]\" means any person who carries on or proposes to carry on the business of providing custodial services;",
+      "meaningful_context": "This provision defines \"custodian\" within the Securities and Exchange Board of India (Custodian) Regulations, 1996, as any entity engaged in or intending to engage in custodial services. This definition is fundamental for understanding the regulated entities under these financial regulations and forms the basis for their registration and compliance requirements.",
+      "confidence": "High",
+      "reasoning": "The definition for \"custodian\" was located using Phase 2 (Heading Search). The term is explicitly defined under Chapter I, Regulation 2, titled \"Definitions,\" sub-clause (d) on page 4 of the provided source PDF. The footnote 6 indicates that the term \"custodian of securities\" was substituted with \"custodian\" by an amendment in 2018, confirming the current relevance of this definition despite the original context sentence using the older phrase.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2(d)",
+        "section_title": "Definitions.",
+        "page_number": 4,
+        "notified_date": "16/05/1996"
+      },
+      "source_url": "Securities and Exchange Board of India (Custodian) Regulations, 1996 (https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Depositories Act, 1996 (22 of 1996)",
+    "sub_reference": "",
+    "sentence": "“depository” means a body corporate as defined in the Depositories Act, 1996 (22 of 1996);",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Depositories_Act,_1996.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1955/1/A1996_22.pdf#search=Depositories Act, 1996",
+    "extracted_details": {
+      "extracted_definition": "“depository” means a company formed and registered under the Companies Act, 1956 (1 of 1956) and which has been granted a certificate of registration under sub-section (1A) of section 12 of the Securities and Exchange Board of India Act, 1992 (15 of 1992);",
+      "meaningful_context": "This definition is from the preliminary section of The Depositories Act, 1996, which governs depositories in the Indian securities market. It clarifies that a \"depository\" is a company registered under the Companies Act, 1956, and holding a specific registration certificate from the Securities and Exchange Board of India (SEBI) under the SEBI Act, 1992. This legal clarification is fundamental for regulatory compliance and operational understanding within the financial sector.",
+      "confidence": "High",
+      "reasoning": "The 'Subject Term' (depository) was directly sought within the provided 'Source PDF text'. Following Phase 1 (Direct Match), the term 'depository' was located under 'Section 2. Definitions.—(1) In this Act, unless the context otherwise requires,—' on page 3 of the document, specifically in clause (e). The extracted text is a verbatim match for the definition of 'depository' as referenced in the original context sentence within the specified Act.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2(1)(e)",
+        "section_title": "Definitions.",
+        "page_number": 3,
+        "notified_date": "10/08/1996"
+      },
+      "source_url": "The Depositories Act, 1996 (22 of 1996) [Indian statutes](https://indiacode.nic.in)"
+    }
+  },
+  {
+    "reference": "Fugitive Economic Offenders Act, 2018 (17 of 2018)",
+    "sub_reference": "",
+    "sentence": "“economic offence” means an offence under the Fugitive Economic Offenders Act, 2018 (17 of 2018);",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Fugitive_Economic_Offenders_Act,_2018.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/4035/1/A2018-17.pdf#search=Fugitive Economic Offenders Act, 2018",
+    "extracted_details": {
+      "extracted_definition": "(l) “Schedule” means the Schedule appended to this Act;\n(m) “Scheduled Offence” means an offence specified in the Schedule, if the total value involved in such offence or offences is one hundred crore rupees or more;",
+      "meaningful_context": "The term \"economic offence\" is not explicitly defined within the Fugitive Economic Offenders Act, 2018. However, the original context sentence defines \"economic offence\" by referring to \"an offence under the Fugitive Economic Offenders Act, 2018\". The Act itself uses the term \"Scheduled Offence\" to refer to the specific types of high-value financial crimes it addresses, which are detailed in an appended Schedule and must involve a total value of one hundred crore rupees or more. This extracted definition therefore provides the Act's categorization of what constitutes an offence under its provisions.",
+      "confidence": "High",
+      "reasoning": "1. Phase 2 (Heading Search) was used. The `Original context sentence` defines “economic offence” as \"an offence under the Fugitive Economic Offenders Act, 2018 (17 of 2018)\".\n2. The provided PDF is \"THE FUGITIVE ECONOMIC OFFENDERS ACT, 2018\". The term \"economic offence\" is not found as a direct definition within Section 2 (\"Definitions\") of this Act.\n3. However, the Act defines \"Scheduled Offence\" in Section 2(1)(m) as \"an offence specified in the Schedule, if the total value involved in such offence or offences is one hundred crore rupees or more\". The \"Schedule\" is defined in Section 2(1)(l) as \"the Schedule appended to this Act\".\n4. This definition of \"Scheduled Offence\" precisely describes what constitutes \"an offence under the Fugitive Economic Offenders Act, 2018\" for the purposes of that Act, aligning with the referential definition provided in the `Original context sentence` for \"economic offence\".\n5. The extracted text provides the verbatim definitions of both \"Schedule\" and \"Scheduled Offence\" from the Act, which together clarify the type of offence referred to by the original sentence.",
+      "location_metadata": {
+        "chapter_number": "CHAPTER I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions.",
+        "page_number": 3,
+        "notified_date": "31/07/2018"
+      },
+      "source_url": "Indian statutes](https://indiacode.nic.in"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices Relating to Securities Market) Regulations, 2003",
+    "sub_reference": "clause (c) of sub-regulation (1) of regulation 2",
+    "sentence": "“fraud” means a fraud as defined in clause (c) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices Relating to Securities Market) Regulations, 2003;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Prohibition_of_Fraudulent_and_Unfair_Trade_Practices_Relating_to_Securities_Mark.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/1766747237712.pdf",
+    "extracted_details": {
+      "extracted_definition": "(c) “fraud” includes any act, expression, omission or concealment committed whether in a deceitful manner or not by a person or by any other person with his connivance or by his agent while dealing in securities in order to induce another person or his agent to deal in securities, whether or not there is any wrongful gain or avoidance of any loss, and shall also include— (1) a knowing misrepresentation of the truth or concealment of material fact in order that another person may act to his detriment; (2) a suggestion as to a fact which is not true by one who does not believe it to be true; (3) an active concealment of a fact by a person having knowledge or belief of the fact; (4) a promise made without any intention of performing it; (5) a representation made in a reckless and careless manner whether it be true or false; (6) any such act or omission as any other law specifically declares to be fraudulent, (7) deceptive behaviour by a person depriving another of informed consent or full participation, (8) a false statement made without reasonable ground for believing it to be true. (9) the act of an issuer of securities giving out misinformation that affects the market price of the security, resulting in investors being effectively misled even though they did not rely on the statement itself or anything derived from it other than the market price. And “fraudulent” shall be construed accordingly; Nothing contained in this clause shall apply to any general comments made in good faith in regard to— (a) the economic policy of the government (b) the economic situation of the country (c) trends in the securities market or (d) any other matter of a like nature whether such comments are made in public or in private;",
+      "meaningful_context": "This provision meticulously defines “fraud” within the framework of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices Relating to Securities Market) Regulations, 2003. It enumerates specific acts and omissions that constitute fraud in securities dealings, providing a clear legal basis for identifying and addressing such illicit practices in the Indian financial markets.",
+      "confidence": "High",
+      "reasoning": "The extraction was performed successfully using Phase 1 (Direct Match). The exact provision, 'clause (c) of sub-regulation (1) of regulation 2', which defines 'fraud', was located verbatim on pages 2 and 3 of the provided PDF text under Chapter I, Regulation 2 'Definitions'.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions",
+        "page_number": 2,
+        "notified_date": "17/07/2003"
+      },
+      "source_url": "Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003 [SEBI regulations](https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Companies Act, 2013 (18 of 2013)",
+    "sub_reference": "",
+    "sentence": "“free reserve” shall have the same meaning as defined under Companies Act, 2013 (18 of 2013);",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Companies_Act,_2013.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf#search=Companies Act, 2013",
+    "extracted_details": {
+      "extracted_definition": "(43) “free reserves” means such reserves which, as per the latest audited balance sheet of a company, are available for distribution as dividend: Provided that— (i) any amount representing unrealised gains, notional gains or revaluation of assets, whether shown as a reserve or otherwise, or (ii) any change in carrying amount of an asset or of a liability recognised in equity, including surplus in profit and loss account on measurement of the asset or the liability at fair value, shall not be treated as free reserves;",
+      "meaningful_context": "This definition is critical in Indian financial regulations, specifically under the Companies Act, 2013, as it establishes what a company can legally use for dividend distribution or other capital allocations. By explicitly excluding unrealised gains and revaluation surpluses, it ensures that only actual distributable profits are considered, safeguarding financial stability and investor interests.",
+      "confidence": "High",
+      "reasoning": "The definition for \"free reserves\" was located directly in Section 2, clause (43) of THE COMPANIES ACT, 2013, which is the dedicated definitions section of the Act. This corresponds to Phase 2 (Heading Search) of the deep search navigation.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions.",
+        "page_number": 20,
+        "notified_date": "29/08/2013"
+      },
+      "source_url": "[The Companies Act, 2013](https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html)"
+    }
+  },
+  {
+    "reference": "Securities Contracts (Regulation) Act, 1956",
+    "sub_reference": "clause (bc) of section 2",
+    "sentence": "“goods” means the goods notified by the Central Government under clause (bc) of section 2 of the Securities Contracts (Regulation) Act, 1956 and forming the underlying of any commodity derivative;",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Securities_Contracts_(Regulation)_Act,_1956.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1644/1/A1956-42.pdf#search=Securities Contracts (Regulation) Act, 1956",
+    "extracted_details": {
+      "extracted_definition": "(bb) “goods” mean every kind of movable property other than actionable claims, money and securities; \n(bc) “commodity derivative” means a contract—\n(i) for the delivery of such goods, as may be notified by the Central Government in the Official Gazette, and which is not a ready delivery contract; or\n(ii) for differences, which derives its value from prices or indices of prices of such underlying goods or activities, services, rights, interests and events, as may be notified by the Central Government, in consultation with the Board, but does not include securities as referred to in sub-clauses (A) and (B) of clause (ac);]",
+      "meaningful_context": "This provision defines \"commodity derivative\" within the Securities Contracts (Regulation) Act, 1956. Specifically, sub-clause (i) refers to \"goods, as may be notified by the Central Government,\" which is the precise type of goods the original context sentence alludes to. This clarifies the scope of commodities that can form the underlying asset for regulated derivatives, thereby preventing undesirable speculation in such markets.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) was used. The exact sub-reference 'clause (bc) of section 2' was located on page 6 of the provided PDF. Although clause (bc) primarily defines 'commodity derivative,' the original context sentence defines 'goods' by explicitly referring to 'the goods notified by the Central Government under clause (bc) of section 2'. Sub-clause (i) of the extracted text directly contains the phrase 'such goods, as may be notified by the Central Government in the Official Gazette,' confirming it as the intended source for the specific type of goods referenced. The `notified_date` reflects when this clause was inserted into the Act, as indicated by footnote 6 on page 6.",
+      "location_metadata": {
+        "chapter_number": null,
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions.",
+        "page_number": 6,
+        "notified_date": "28/09/2015"
+      },
+      "source_url": "[Securities Contracts (Regulation) Act, 1956](https://indiacode.nic.in)"
+    }
+  },
+  {
+    "reference": "Competition Act, 2002 (12 of 2003)",
+    "sub_reference": "clause (b) of the Explanation to Section 5",
+    "sentence": "“group” means a group as defined in clause (b) of the Explanation to Section 5 of the Competition Act, 2002 (12 of 2003);",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Competition_Act,_2002.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2010/7/A2003-12.pdf#search=Competition Act, 2002",
+    "extracted_details": {
+      "extracted_definition": "Explanation.—For the purposes of this section,—\n(b) “group” means two or more enterprises where one enterprise is directly or indirectly, in a position to—\n(i) exercise twenty-six per cent. or such other higher percentage as may be prescribed, of the voting rights in the other enterprise; or\n(ii) appoint more than fifty per cent. of the members of the board of directors in the other enterprise; or\n(iii) control the management or affairs of the other enterprise;",
+      "meaningful_context": "This provision defines \"group\" within the context of Section 5 of the Competition Act, 2002, which regulates combinations. This definition is crucial for assessing whether entities constitute a 'group' based on specified control criteria (voting rights, board appointments, or management control), thereby determining the applicability of combination thresholds and regulatory oversight under the Act.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) succeeded. The `sub_reference` 'clause (b) of the Explanation to Section 5' was located verbatim on page 11 of the source PDF. The extracted text includes the 'Explanation' header for contextual accuracy and then precisely extracts clause (b) which defines 'group', directly fulfilling the request.",
+      "location_metadata": {
+        "chapter_number": "II",
+        "chapter_title": "PROHIBITION OF CERTAIN AGREEMENTS, ABUSE OF DOMINANT POSITION AND REGULATION OF COMBINATIONS",
+        "section_number": "5",
+        "section_title": "Combination.",
+        "page_number": 11,
+        "notified_date": "13/01/2003"
+      },
+      "source_url": "[The Competition Act, 2002 (12 of 2003)](https://indiacode.nic.in/handle/123456789/2202?sam_handle=123456789/1362)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations, 2014",
+    "sub_reference": "clause (za) of sub-regulation (1) of regulation 2",
+    "sentence": "“InvIT” or “Infrastructure Investment Trust” shall have the meaning assigned in clause (za) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations, 2014;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Infrastructure_Investment_Trusts)_Regulations,_2014.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/apr-2025/1744094984332.pdf",
+    "extracted_details": {
+      "extracted_definition": "“InvIT” or 'Infrastructure Investment Trust' shall mean the trust registered as such under these regulations;",
+      "meaningful_context": "The extracted text defines “InvIT” or “Infrastructure Investment Trust” as a trust registered under these specific regulations. This foundational definition establishes the legal entity type that is subject to the rules and framework laid out in the Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations, 2014, making it central to the scope and applicability of the entire document.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) was successful. The definition for “InvIT” or 'Infrastructure Investment Trust' was found precisely at clause (za) of sub-regulation (1) of regulation 2 on page 11, matching the requested sub-reference verbatim.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions",
+        "page_number": 11,
+        "notified_date": "26/09/2014"
+      },
+      "source_url": "[Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations, 2014](https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003",
+    "sub_reference": "",
+    "sentence": "“market abuse” includes manipulative, fraudulent and unfair trade practices which may contravene Section 12A of the Act or any of the provisions of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003 or the Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Prohibition_of_Fraudulent_and_Unfair_Trade_Practices_relating_to_Securities_Mark.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/1766747237712.pdf",
+    "extracted_details": {
+      "extracted_definition": "4. Prohibition of manipulative, fraudulent and unfair trade practices\n(1) Without prejudice to the provisions of regulation 3, no person shall indulge in a manipulative, fraudulent or an unfair trade practice in securities markets.\nExplanation.– For the removal of doubts, it is clarified that- (i) any act of diversion, misutilisation or siphoning off of assets or earnings of a company whose securities are listed or any concealment of such act or any device, scheme or artifice to manipulate the books of accounts or financial statement of such a company that would directly or indirectly manipulate the price of securities of that company, or (ii) transactions through mule accounts for indulging in manipulative, fraudulent and unfair trade practice shall be and shall always be deemed to have been included in sub-regulation (1).\n(2) Dealing in securities shall be deemed to be a manipulative fraudulent or an unfair trade practice if it involves any of the following:—\n(a) knowingly indulging in an act which creates false or misleading appearance of trading in the securities market;\n(b) dealing in a security not intended to effect transfer of beneficial ownership but intended to operate only as a device to inflate, depress or cause fluctuations in the price of such security for wrongful gain or avoidance of loss;\n(c) inducing any person to subscribe to an issue of the securities for fraudulently securing the minimum subscription to such issue of securities, by advancing or agreeing to advance any money to any other person or through any other means;\n(d) inducing any person for dealing in any securities for artificially inflating, depressing, maintaining or causing fluctuation in the price of securities through any means including by paying, offering or agreeing to pay or offer any money or money's worth, directly or indirectly, to any person;\n(e) any act or omission amounting to manipulation of the price of a security including, influencing or manipulating the reference price or bench mark price of any securities;\n(f) knowingly publishing or causing to publish or reporting or causing to report by a person dealing in securities any information relating to securities, including financial results, financial statements, mergers and acquisitions, regulatory approvals, which is not true or which he does not believe to be true prior to or in the course of dealing in securities;\n(g) entering into a transaction in securities without intention of performing it or without intention of change of ownership of such security;\n(h) selling, dealing or pledging of stolen, counterfeit or fraudulently issued securities whether in physical or dematerialized form: Provided that if:- (i) the person selling, dealing in or pledging stolen, counterfeit or fraudulently issued securities was a holder in due course; or (ii) the stolen, counterfeit or fraudulently issued securities were previously traded on the market through a bonafide transaction, (iii) such selling, dealing or pledging of stolen, counterfeit or fraudulently issued securities shall not be considered as a manipulative, fraudulent, or unfair trade practice;\n(i) ***\n(j) ***\n(k) disseminating information or advice through any media, whether physical or digital, which the disseminator knows to be false or misleading in a reckless or careless manner and which is designed to, or likely to influence the decision of investors dealing in securities;\n(l) ***;\n(m) a market participant entering into transactions on behalf of client without the knowledge of or instructions from client or misutilizing or diverting the funds or securities of the client held in fiduciary capacity\";\n(n) circular transactions in respect of a security entered into between persons including intermediaries to artificially provide a false appearance of trading in such security or to inflate, depress or cause fluctuations in the price of such security;\n(o) fraudulent inducement of any person by a market participant to deal in securities with the objective of enhancing his brokerage or commission or income;\n(p) an intermediary predating or otherwise falsifying records including contract notes, client instructions, balance of securities statement, client account statements;\n(q) any order in securities placed by a person, while directly or indirectly in possession of information that is not publically available, regarding a substantial impending transaction in that securities, its underlying securities or its derivative;\n(r) knowingly planting false or misleading news which may induce sale or purchase of securities.\n(s) mis-selling of securities or services relating to securities market; Explanation- For the purpose of this clause, \"mis-selling\" means sale of securities or services relating to securities market by any person, directly or indirectly, by─ (i) knowingly making a false or misleading statement, or (ii) knowingly concealing or omitting material facts, or (iii)knowingly concealing the associated risk, or (iv) not taking reasonable care to ensure suitability of the securities or service to the buyer;\n(t) illegal mobilization of funds by sponsoring or causing to be sponsored or carrying on or causing to be carried on any collective investment scheme by any person.\nExplanation –1 For the purposes of this sub-regulation, for the removal of doubts, it is clarified that the acts or omissions listed in this sub-regulation are not exhaustive and that an act or omission is prohibited if it falls within the purview of regulation 3, notwithstanding that it is not included in this sub-regulation or is described as being committed only by a certain category of persons in this sub-regulation.\nExplanation – 2 Market Participant shall include any person or entity registered under Section 12 of the Act and its employees and agents.",
+      "meaningful_context": "The extracted provision comprehensively defines what constitutes \"manipulative, fraudulent and unfair trade practices\" in the Indian securities market, directly addressing the core components of \"market abuse\" as referenced in the original context sentence. It lists specific acts and omissions deemed to be such practices, establishing a clear legal framework to combat various forms of market misconduct. This regulation is vital for maintaining the integrity and fairness of the securities market and safeguarding investor interests under Indian financial regulations.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) was used. The original context sentence explicitly states that “market abuse” includes \"manipulative, fraudulent and unfair trade practices\" which may contravene the \"Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003\". Regulation 4 of the provided PDF text, which belongs to these exact regulations, is titled \"Prohibition of manipulative, fraudulent and unfair trade practices\". This regulation directly details the specific acts that fall under these prohibited practices. The text was extracted verbatim from Regulation 4, with the inline footnote markers removed to present the current legal language of the provision as reflected by the amendments.",
+      "location_metadata": {
+        "chapter_number": "II",
+        "chapter_title": "PROHIBITION OF FRAUDULENT AND UNFAIR TRADE PRACTICES RELATING TO THE SECURITIES MARKET",
+        "section_number": "4",
+        "section_title": "Prohibition of manipulative, fraudulent and unfair trade practices",
+        "page_number": 4,
+        "notified_date": "17/07/2003"
+      },
+      "source_url": "https://www.sebi.gov.in/legal/regulations/jul-2003/sebi-prohibition-of-fraudulent-and-unfair-trade-practices-relating-to-securities-market-regulations-2003_16155.html"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015",
+    "sub_reference": "",
+    "sentence": "“market abuse” includes manipulative, fraudulent and unfair trade practices which may contravene Section 12A of the Act or any of the provisions of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003 or the Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Prohibition_of_Insider_Trading)_Regulations,_2015.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2025/1752572636085.pdf",
+    "extracted_details": {
+      "extracted_definition": "3. Prohibition on communicating or procuring unpublished price sensitive information.\n(1) No insider shall communicate, provide, or allow access to any unpublished price sensitive information, relating to a company or securities listed or proposed to be listed, to any person including other insiders except where such communication is in furtherance of legitimate purposes, performance of duties or discharge of legal obligations.\n(2) No person shall procure from or cause the communication by any insider of unpublished price sensitive information, relating to a company or securities listed or proposed to be listed, except in furtherance of legitimate purposes, performance of duties or discharge of legal obligations.\n4. Prohibition on trading by insiders.\n(1) No insider shall trade in securities that are listed or proposed to be listed on a stock exchange when in possession of unpublished price sensitive information.",
+      "meaningful_context": "The concept of 'market abuse' referenced in the original sentence explicitly includes practices governed by the SEBI (Prohibition of Insider Trading) Regulations, 2015. Regulations 3 and 4 of these regulations form the core of these prohibitions, strictly forbidding the communication of unpublished price sensitive information (UPSI) and trading while in possession of such information. This extracted provision provides the legal basis for identifying insider trading as a form of market abuse in the Indian securities market.",
+      "confidence": "High",
+      "reasoning": "The previous extraction used an incorrect PDF containing only reporting forms/annexures. I have corrected the source_pdf_url to point to the consolidated PIT Regulations, 2015, as amended up to March 12, 2025. Regulations 3 and 4 were then extracted verbatim as they define the core prohibited practices (Insider Trading) that constitute 'market abuse' as described in the original context sentence.",
+      "location_metadata": {
+        "chapter_number": null,
+        "chapter_title": null,
+        "section_number": null,
+        "section_title": null,
+        "page_number": null,
+        "notified_date": null
+      },
+      "source_url": "[SEBI Regulations](https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Real Estate Investment Trusts) Regulations, 2014",
+    "sub_reference": "clause (zm) of sub-regulation 1 of regulation 2",
+    "sentence": "“REIT” or “Real Estate Investment Trust” shall have the meaning assigned in clause (zm) of sub-regulation 1 of regulation 2 of the Securities and Exchange Board of India (Real Estate Investment Trusts) Regulations, 2014;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Real_Estate_Investment_Trusts)_Regulations,_2014.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/apr-2025/1745580009796.pdf",
+    "extracted_details": {
+      "extracted_definition": "\"REIT\" or \"Real Estate Investment Trust\" means a person that pools rupees fifty crores or more for the purpose of issuing units to at least two hundred investors so as to acquire and manage real estate asset(s) or property(ies), that would entitle such investors to receive the income generated therefrom without giving them the day- to-day control over the management and operation of such real estate asset(s) or property(ies). Explanation 1. – For the purpose of these regulations, a REIT or Real Estate Investment Trust shall include an SM REIT under Chapter VIB of these regulations. Explanation 2. – For the removal of doubts, it is hereby clarified that for the purpose of these regulations, any company which acquires and manages real estate asset(s) or property(ies) and offers or issues securities to the investors, shall not be construed as a REIT or Real Estate Investment Trust;",
+      "meaningful_context": "This definition establishes the core characteristics of a Real Estate Investment Trust, detailing the minimum pooling amount and investor count, and clarifying that investors receive income without direct management control. It is a fundamental definition within the SEBI (Real Estate Investment Trusts) Regulations, 2014, setting the regulatory scope for such investment vehicles in the Indian financial market.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) was successful. The `sub-reference` 'clause (zm) of sub-regulation 1 of regulation 2' was directly located on page 11 of the provided text. The extracted text precisely defines \"REIT\" or \"Real Estate Investment Trust\" as indicated by the `Original context sentence`.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions.",
+        "page_number": 11,
+        "notified_date": "26/09/2014"
+      },
+      "source_url": "SECURITIES AND EXCHANGE BOARD OF INDIA (REAL ESTATE INVESTMENT TRUSTS) REGULATIONS, 2014 (https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Companies Act, 2013 (18 of 2013)",
+    "sub_reference": "section 2(77)",
+    "sentence": "“relative” means a person as defined in section 2(77) of the Companies Act, 2013 (18 of 2013);",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Companies_Act,_2013.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf#search=Companies Act, 2013",
+    "extracted_details": {
+      "extracted_definition": "(77) “relative”, with reference to any person, means any one who is related to another, if—\n(i) they are members of a Hindu Undivided Family;\n(ii) they are husband and wife; or\n(iii) one person is related to the other in such manner as may be prescribed;",
+      "meaningful_context": "This provision defines \"relative\" within the Companies Act, 2013, which is crucial for determining relationships in corporate governance, especially concerning transactions with related parties (Section 188), and for various other compliance requirements under the Act. The definition starts with basic family units and then includes a broader category that can be specified by rules, indicating flexibility for regulatory updates. This helps in identifying potential conflicts of interest and ensuring transparency in company dealings.",
+      "confidence": "High",
+      "reasoning": "The sub-reference 'section 2(77)' was directly located within the provided PDF text under 'CHAPTER I PRELIMINARY', titled '2. Definitions.' on page 25. The full verbatim text of clause (77) was extracted as requested. The notified date reflects the enactment date of the Companies Act, 2013, which applies to this core definition.",
+      "location_metadata": {
+        "chapter_number": "CHAPTER I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2(77)",
+        "section_title": "Definitions",
+        "page_number": 25,
+        "notified_date": "29/08/2013"
+      },
+      "source_url": "Companies Act, 2013 (Amended upto 30th October, 2023) [https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html]"
+    }
+  },
+  {
+    "reference": "Securities Contracts (Regulation) Act, 1956 (42 of 1956)",
+    "sub_reference": "",
+    "sentence": "“securities laws” means the Act, the Securities Contracts (Regulation) Act, 1956 (42 of 1956), the Depositories Act, 1996 (22 of 1996) and the provision of any other law to the extent it is administered by the Board and the relevant rules and regulations made thereunder;",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Securities_Contracts_(Regulation)_Act,_1956.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1644/1/A1956-42.pdf#search=Securities Contracts (Regulation) Act, 1956",
+    "extracted_details": {
+      "extracted_definition": "1. Short title, extent and commencement.—(1) This Act may be called the Securities Contracts (Regulation) Act, 1956.",
+      "meaningful_context": "The extracted provision identifies the full and official title of the Securities Contracts (Regulation) Act, 1956. This Act is a cornerstone of Indian financial regulation, specifically governing securities contracts and stock exchanges. The short title is directly referenced as a component of \"securities laws\" in the original context sentence, making this the primary identification of the Act itself within the regulatory framework.",
+      "confidence": "High",
+      "reasoning": "The 'sub-reference to find' was 'the main focus of the document', which implies the primary identification of the Act. The 'Original context sentence' defines 'securities laws' by explicitly including 'the Securities Contracts (Regulation) Act, 1956 (42 of 1956)'. Upon searching the provided Source PDF text, the term 'securities laws' itself is not defined within the Act (e.g., in Section 2 'Definitions'). However, Section 1(1) of the Act, located on page 6, formally establishes the short title of the Act: 'This Act may be called the Securities Contracts (Regulation) Act, 1956.' This exact identification is a direct reference and a core component of the 'securities laws' as described in the original context sentence. Therefore, Phase 1 (Direct Match) is applied by extracting the formal identification of the Act itself as the referenced source provision.",
+      "location_metadata": {
+        "chapter_number": null,
+        "chapter_title": "PRELIMINARY",
+        "section_number": "1",
+        "section_title": "Short title, extent and commencement.",
+        "page_number": 6,
+        "notified_date": "16/02/1957"
+      },
+      "source_url": "[Indian statutes](https://indiacode.nic.in)"
+    }
+  },
+  {
+    "reference": "Depositories Act, 1996 (22 of 1996)",
+    "sub_reference": "",
+    "sentence": "“securities laws” means the Act, the Securities Contracts (Regulation) Act, 1956 (42 of 1956), the Depositories Act, 1996 (22 of 1996) and the provision of any other law to the extent it is administered by the Board and the relevant rules and regulations made thereunder;",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Depositories_Act,_1996.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1955/1/A1996_22.pdf#search=Depositories Act, 1996",
+    "extracted_details": {
+      "extracted_definition": "THE DEPOSITORIES ACT, 1996 ACT NO. 22 OF 1996 [10th August, 1996.] An Act to provide for regulation of depositories in securities and for matters connected therewith or incidental thereto.\nBE it enacted by Parliament in the Forty-seventh Year of the Republic of India as follows:—\nCHAPTER I PRELIMINARY\n1. Short title, extent and commencement.—(1) This Act may be called the Depositories Act, 1996.",
+      "meaningful_context": "This provision formally identifies \"The Depositories Act, 1996\" by its full title, Act number, and date of enactment. In the context of the original sentence defining \"securities laws,\" this extracted text clarifies the specific legislative instrument being referenced as one of the components of Indian securities law.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) succeeded. The `sub_reference` was the name of the Act itself, \"the Depositories Act, 1996 (22 of 1996)\". The provided PDF is the text of this specific Act. The extracted text from Page 3 directly provides the official title, Act number, enactment date, the long title (An Act to provide...), and the short title from Section 1(1) of the Act, which collectively serve as the complete identification of the referenced Act within its own legislative document.",
+      "location_metadata": {
+        "chapter_number": "I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "1(1)",
+        "section_title": "Short title, extent and commencement.",
+        "page_number": 3,
+        "notified_date": "10/08/1996"
+      },
+      "source_url": "Indian statutes (https://indiacode.nic.in)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Debenture Trustees) Regulations, 1993",
+    "sub_reference": "",
+    "sentence": "Further, “trustees” in case of mutual fund Lite shall mean a debenture trustee registered with the Board under the Securities and Exchange Board of India (Debenture Trustees) Regulations, 1993; in case an existing sponsor transfers its eligible passive schemes from its existing mutual fund to a mutual fund lite in accordance with regulation 58, the MF Lite asset management company may appoint the existing trustee of the mutual fund as the trustee of the mutual fund lite;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Debenture_Trustees)_Regulations,_1993.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2024/1723196882810.pdf",
+    "extracted_details": {
+      "extracted_definition": "“debenture trustee” means a trustee appointed in respect of any issue of debentures of a body corporate;",
+      "meaningful_context": "Regulation 2(bb) defines 'debenture trustee' within the Securities and Exchange Board of India (Debenture Trustees) Regulations, 1993. This definition is relevant because the original context sentence explicitly states that 'trustees' for a mutual fund Lite 'shall mean a debenture trustee registered with the Board under' these regulations, thus directly referencing this specific regulatory definition. It clarifies the role and registration requirement for such trustees in the specified context.",
+      "confidence": "High",
+      "reasoning": "Step 1: The Subject Term is 'trustees' (in case of mutual fund Lite). The original context sentence clarifies that 'trustees' in this context 'shall mean a debenture trustee registered with the Board under the Securities and Exchange Board of India (Debenture Trustees) Regulations, 1993'. This directs the search to the definition of 'debenture trustee' within the provided regulations.\nStep 2 (Phase 2 - Heading Search): I navigated to Regulation 2, titled 'Definitions', as it is the standard location for definitions in regulatory documents. I located sub-regulation (bb) which defines 'debenture trustee'.\nStep 3 (Verbatim Integrity): The exact text for 'debenture trustee' was extracted from Regulation 2(bb), including the definition. The footnote [10] indicates that this sub-regulation was substituted by an amendment on 13-07-2017, which is recorded as the 'notified_date'.\nStep 4 (Confidence & Reasoning): Confidence is High because the original sentence explicitly links the 'trustees' of a mutual fund Lite to the definition of a 'debenture trustee' under these specific regulations, which was directly found and extracted.",
+      "location_metadata": {
+        "chapter_number": "Chapter I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "Regulation 2(bb)",
+        "section_title": "Definitions",
+        "page_number": 3,
+        "notified_date": "13/07/2017"
+      },
+      "source_url": "SECURITIES AND EXCHANGE BOARD OF INDIA (DEBENTURE TRUSTEES) REGULATIONS, 1993 (https://www.sebi.gov.in/legal/regulations/jul-2017/securities-and-exchange-board-of-india-debenture-trustees-amendment-regulations-2017_35345.html)"
+    }
+  },
+  {
+    "reference": "Registration Act, 1908 (16 of 1908)",
+    "sub_reference": "",
+    "sentence": "A mutual fund shall be constituted in the form of a trust and the instrument of trust shall be in the form of a deed, duly registered under the provisions of the Registration Act, 1908 (16 of 1908), executed by the sponsor in favour of the trustee named in such an instrument.",
+    "source": "Indiacode",
+    "pdf_path": "repository\\Registration_Act,_1908.pdf",
+    "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2190/5/A1908-16.pdf#search=Registration Act, 1908",
+    "extracted_details": {
+      "extracted_definition": "17. Documents of which registration is compulsory.—(1) The following documents shall be registered, if the property to which they relate is situate in a district in which, and if they have been executed on or after the date on which, Act No. XVI of 1864, or the Indian Registration Act, 1866, or the Indian Registration Act, 1871, or the Indian Registration Act, 1877, or this Act came or comes into force, namely:—\n(a) instruments of gift of immovable property;\n(b) other non-testamentary instruments which purport or operate to create, declare, assign, limit or extinguish, whether in present or in future, any right, title or interest, whether vested or contingent, of the value of one hundred rupees and upwards, to or in immovable property;\n(c) non-testamentary instruments which acknowledge the receipt or payment of any consideration on account of the creation, declaration, assignment, limitation or extinction of any such right, title or interest; and\n(d) leases of immovable property from year to year, or for any term exceeding one year, or reserving a yearly rent;\n3[(e) non-testamentary instruments transferring or assigning any decree or order of a Court or any award when such decree or order or award purports or operates to create, declare, assign, limit or extinguish, whether in present or in future, any right, title or interest, whether vested or contingent, of the value of one hundred rupees and upwards, to or in immovable property:]\nProvided that the 4[State Government] may, by order published in the 5[Official Gazette], exempt from the operation of this sub-section any lease executed in any district, or part of a district, the terms granted by which do not exceed five years and the annual rents reserved by which do not exceed fifty rupees.",
+      "meaningful_context": "The extracted text specifies which documents are compulsorily registrable under the Act, particularly focusing on non-testamentary instruments creating interests in immovable property. This directly addresses the requirement in the original sentence for a mutual fund's instrument of trust (a deed) to be \"duly registered\" under the provisions of the Registration Act, 1908, as such a deed would establish property interests for the trust.",
+      "confidence": "High",
+      "reasoning": "Phase 2 (Heading Search) was used. The 'Original context sentence' refers to an \"instrument of trust\" in the form of a \"deed\" requiring registration under \"the Registration Act, 1908\". I located 'PART III OF REGISTRABLE DOCUMENTS' and within it, Section 17 'Documents of which registration is compulsory.' Specifically, sub-section (1)(b) states that \"other non-testamentary instruments which purport or operate to create, declare, assign, limit or extinguish... any right, title or interest... to or in immovable property\" are compulsory to be registered. A trust deed for a mutual fund, involving property and creating interests for beneficiaries, directly falls under this provision. The extracted text provides the legal basis for the registration requirement mentioned in the context sentence.",
+      "location_metadata": {
+        "chapter_number": "PART III",
+        "chapter_title": "OF REGISTRABLE DOCUMENTS",
+        "section_number": "17",
+        "section_title": "Documents of which registration is compulsory.",
+        "page_number": 9,
+        "notified_date": "18/12/1908"
+      },
+      "source_url": "THE REGISTRATION ACT, 1908"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+    "sub_reference": "Schedule II",
+    "sentence": "A person shall be eligible to be appointed as a trustee only if that person — (a) complies with fit and proper person criteria specified in Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Intermediaries)_Regulations,_2008.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2024/1725011743767.pdf",
+    "extracted_details": {
+      "extracted_definition": "SCHEDULE II\nSECURITIES AND EXCHANGE BOARD OF INDIA (INTERMEDIARIES) REGULATIONS, 2008\n[See regulation 7]\n(1) The applicant or intermediary shall meet the criteria, as provided in the respective regulations applicable to such an applicant or intermediary including: (a) the competence and capability in terms of infrastructure and manpower requirements; and (b) the financial soundness, which includes meeting the net worth requirements.\n(2) The ‘fit and proper person’ criteria shall apply to the following persons:\n(a) the applicant or the intermediary; (b) the principal officer, the directors or managing partners, the compliance officer and the key management persons by whatever name called; and (c) the promoters or persons holding controlling interest or persons exercising control over the applicant or intermediary, directly or indirectly: Provided that in case of an unlisted applicant or intermediary, any person holding twenty percent or more voting rights, irrespective of whether they hold controlling interest or exercise control, shall be required to fulfill the ‘fit and proper person’ criteria. Explanation– For the purpose of this sub-clause, the expressions “controlling interest” and “control” in case of an applicant or intermediary, shall be construed with reference to the respective regulations applicable to the applicant or intermediary.\n(3) For the purpose of determining as to whether any person is a ‘fit and proper person’, the Board may take into account any criteria as it deems fit, including but not limited to the following: (a) integrity, honesty, ethical behaviour, reputation, fairness and character of the person; (b) the person not incurring any of the following disqualifications: (i) criminal complaint or information under section 154 of the Code of Criminal Procedure, 1973 (2 of 1974) has been filed against such person by the Board and which is pending; (ii) charge sheet has been filed against such person by any enforcement agency in matters concerning economic offences and is pending; (iii) an order of restraint, prohibition or debarment has been passed against such person by the Board or any other regulatory authority or enforcement agency in any matter concerning securities laws or financial markets and such order is in force; (iv) recovery proceedings have been initiated by the Board against such person and are pending; (v) an order of conviction has been passed against such person by a court for any offence involving moral turpitude; (vi) any winding up proceedings have been initiated or an order for winding up has been passed against such person; (vii) such person has been declared insolvent and not discharged; (viii) such person has been found to be of unsound mind by a court of competent jurisdiction and the finding is in force; (ix) such person has been categorized as a wilful defaulter; (x) such person has been declared a fugitive economic offender; or (xi) any other disqualification as may be specified by the Board from time to time.\n(4) Where any person has been declared as not ‘fit and proper person’ by an order of the Board, such a person shall not be eligible to apply for any registration during the period provided in the said order or for a period of five years from the date of effect of the order, if no such period is specified in the order.\n(5) At the time of filing of an application for registration as an intermediary, if any notice to show cause has been issued for proceedings under these regulations or under section 11(4) or section 11B of the Act against the applicant or any other person referred in clause (2), then such an application shall not be considered for grant of registration for a period of one year from the date of issuance of such notice or until the conclusion of the proceedings, whichever is earlier.\n(6) Any disqualification of an associate or group entity of the applicant or intermediary of the nature as referred in sub-clause (b) of clause (3), shall not have any bearing on the ‘fit and proper person’ criteria of the applicant or intermediary unless the applicant or intermediary or any other person referred in clause (2), is also found to incur the same disqualification in the said matter: Provided that if any person as referred in sub-clause (b) of clause (2) fails to satisfy the ‘fit and proper person’ criteria, the intermediary shall replace such person within thirty days from the date of such disqualification failing which the ‘fit and proper person’ criteria may be invoked against the intermediary: Provided further that if any person as referred in sub-clause (c) of clause (2) fails to satisfy the ‘fit and proper person’ criteria, the intermediary shall ensure that such person does not exercise any voting rights and that such person divests their holding within six months from the date of such disqualification failing which the ‘fit and proper person’ criteria may be invoked against such intermediary.\n(7) The ‘fit and proper person’ criteria shall be applicable at the time of application of registration and during the continuity of registration and the intermediary shall ensure that the persons as referred in sub-clauses (b) and (c) of clause (2) comply with the ‘fit and proper person’ criteria.",
+      "meaningful_context": "This extract from Schedule II of the SEBI (Intermediaries) Regulations, 2008, outlines the comprehensive 'fit and proper person' criteria that applicants and existing intermediaries must continuously meet. The criteria include competence, financial soundness, integrity, and absence of various disqualifications like criminal complaints, debarment orders, or wilful defaulter status. Compliance with these standards is crucial for maintaining registration and operations within the Indian securities market, ensuring market integrity and investor protection.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) succeeded. The 'sub-reference to find' was 'Schedule II', which was directly located in the Table of Contents on Page 2 as 'SCHEDULE TWO - CRITERIA FOR DETERMINING A ‘FIT AND PROPER PERSON’'. The content of Schedule II, starting on Page 28, explicitly details the 'fit and proper person criteria', aligning perfectly with the 'Original context sentence'. The extracted text incorporates the substituted version of clause (1) as indicated by footnote 21, ensuring the most current provision is provided.",
+      "location_metadata": {
+        "chapter_number": null,
+        "chapter_title": null,
+        "section_number": "Schedule II",
+        "section_title": "CRITERIA FOR DETERMINING A ‘FIT AND PROPER PERSON’",
+        "page_number": 28,
+        "notified_date": "26/05/2008"
+      },
+      "source_url": "Securities and Exchange Board of India (Intermediaries) Regulations, 2008(https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+    "sub_reference": "Schedule II",
+    "sentence": "The asset management company shall comply with fit and proper person criteria specified in Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008.",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Intermediaries)_Regulations,_2008.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2022/1659683424967.pdf",
+    "extracted_details": {
+      "extracted_definition": "SCHEDULE II\nSECURITIES AND EXCHANGE BOARD OF INDIA (INTERMEDIARIES) REGULATIONS, 2008\n[See regulation 7]\n(1) 21[The applicant or intermediary shall meet the criteria, as provided in the respective regulations applicable to such an applicant or intermediary including:\n(a) the competence and capability in terms of infrastructure and manpower requirements; and\n(b) the financial soundness, which includes meeting the net worth requirements.\n(2) The ‘fit and proper person’ criteria shall apply to the following persons:\n(a) the applicant or the intermediary;\n(b) the principal officer, the directors or managing partners, the compliance officer and the key management persons by whatever name called; and\n(c) the promoters or persons holding controlling interest or persons exercising control over the applicant or intermediary, directly or indirectly:\nProvided that in case of an unlisted applicant or intermediary, any person holding twenty percent or more voting rights, irrespective of whether they hold controlling interest or exercise control, shall be required to fulfill the ‘fit and proper person’ criteria.\nExplanation– For the purpose of this sub-clause, the expressions “controlling interest” and “control” in case of an applicant or intermediary, shall be construed with reference to the respective regulations applicable to the applicant or intermediary.\n(3) For the purpose of determining as to whether any person is a ‘fit and proper person’, the Board may take into account any criteria as it deems fit, including but not limited to the following:\n(a) integrity, honesty, ethical behaviour, reputation, fairness and character of the person;\n(b) the person not incurring any of the following disqualifications:\n(i) criminal complaint or information under section 154 of the Code of Criminal Procedure, 1973 (2 of 1974) has been filed against such person by the Board and which is pending;\n(ii) charge sheet has been filed against such person by any enforcement agency in matters concerning economic offences and is pending;\n(iii) an order of restraint, prohibition or debarment has been passed against such person by the Board or any other regulatory authority or enforcement agency in any matter concerning securities laws or financial markets and such order is in force;\n(iv) recovery proceedings have been initiated by the Board against such person and are pending;\n(v) an order of conviction has been passed against such person by a court for any offence involving moral turpitude;\n(vi) any winding up proceedings have been initiated or an order for winding up has been passed against such person;\n(vii) such person has been declared insolvent and not discharged;\n(viii) such person has been found to be of unsound mind by a court of competent jurisdiction and the finding is in force;\n(ix) such person has been categorized as a wilful defaulter;\n(x) such person has been declared a fugitive economic offender; or\n(xi) any other disqualification as may be specified by the Board from time to time.\n(4) Where any person has been declared as not ‘fit and proper person’ by an order of the Board, such a person shall not be eligible to apply for any registration during the period provided in the said order or for a period of five years from the date of effect of the order, if no such period is specified in the order.\n(5) At the time of filing of an application for registration as an intermediary, if any notice to show cause has been issued for proceedings under these regulations or under section 11(4) or section 11B of the Act against the applicant or any other person referred in clause (2), then such an application shall not be considered for grant of registration for a period of one year from the date of issuance of such notice or until the conclusion of the proceedings, whichever is earlier.\n(6) Any disqualification of an associate or group entity of the applicant or intermediary of the nature as referred in sub-clause (b) of clause (3), shall not have any bearing on the ‘fit and proper person’ criteria of the applicant or intermediary unless the applicant or intermediary or any other person referred in clause (2), is also found to incur the same disqualification in the said matter:\nProvided that if any person as referred in sub-clause (b) of clause (2) fails to satisfy the ‘fit and proper person’ criteria, the intermediary shall replace such person within thirty days from the date of such disqualification failing which the ‘fit and proper person’ criteria may be invoked against the intermediary:\nProvided further that if any person as referred in sub-clause (c) of clause (2) fails to satisfy the ‘fit and proper person’ criteria, the intermediary shall ensure that such person does not exercise any voting rights and that such person divests their holding within six months from the date of such disqualification failing which the ‘fit and proper person’ criteria may be invoked against such intermediary.\n(7) The ‘fit and proper person’ criteria shall be applicable at the time of application of registration and during the continuity of registration and the intermediary shall ensure that the persons as referred in sub-clauses (b) and (c) of clause (2) comply with the ‘fit and proper person’ criteria.",
+      "meaningful_context": "Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008, lays down the comprehensive criteria for determining whether an applicant or an intermediary, along with its associated persons (principal officers, directors, promoters), is considered a 'fit and proper person'. This is crucial for maintaining integrity and competence within the Indian securities market, ensuring that only qualified and ethical entities operate. The original context sentence refers to an asset management company complying with these criteria, highlighting the regulatory requirement for financial market participants to meet specific standards to ensure investor protection and market stability.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) succeeded. The 'sub-reference to find' was 'Schedule II'. The PDF's Table of Contents on page 2 explicitly lists 'SCHEDULE TWO - CRITERIA FOR DETERMINING A ‘FIT AND PROPER PERSON’'. The full text of Schedule II, detailing these criteria, begins on page 28, titled 'SCHEDULE II SECURITIES AND EXCHANGE BOARD OF INDIA (INTERMEDIARIES) REGULATIONS, 2008 [See regulation 7]'. The content directly defines the 'fit and proper person' criteria, aligning precisely with the original context sentence's reference.",
+      "location_metadata": {
+        "chapter_number": null,
+        "chapter_title": null,
+        "section_number": "Schedule II",
+        "section_title": "CRITERIA FOR DETERMINING A ‘FIT AND PROPER PERSON’",
+        "page_number": 28,
+        "notified_date": "26/05/2008"
+      },
+      "source_url": "[Securities and Exchange Board of India (Intermediaries) Regulations, 2008](https://www.sebi.gov.in/legal/regulations/may-2008/securities-and-exchange-board-of-india-intermediaries-regulations-2008-last-amended-on-november-17-2021-_19934.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+    "sub_reference": "Schedule II",
+    "sentence": "The persons so appointed as director and/ or key personnel shall also be fit and proper persons in accordance with the criteria specified in Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008.",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Intermediaries)_Regulations,_2008.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2024/1725011743767.pdf",
+    "extracted_details": {
+      "extracted_definition": "SCHEDULE II\nSECURITIES AND EXCHANGE BOARD OF INDIA (INTERMEDIARIES) REGULATIONS, 2008\n[See regulation 7]\n(1) 21[The applicant or intermediary shall meet the criteria, as provided in the respective regulations applicable to such an applicant or intermediary including: (a) the competence and capability in terms of infrastructure and manpower requirements; and (b) the financial soundness, which includes meeting the net worth requirements.\n(2) The ‘fit and proper person’ criteria shall apply to the following persons:\n(a) the applicant or the intermediary;\n(b) the principal officer, the directors or managing partners, the compliance officer and the key management persons by whatever name called; and\n(c) the promoters or persons holding controlling interest or persons exercising control over the applicant or intermediary, directly or indirectly:\nProvided that in case of an unlisted applicant or intermediary, any person holding twenty percent or more voting rights, irrespective of whether they hold controlling interest or exercise control, shall be required to fulfill the ‘fit and proper person’ criteria.\nExplanation– For the purpose of this sub-clause, the expressions “controlling interest” and “control” in case of an applicant or intermediary, shall be construed with reference to the respective regulations applicable to the applicant or intermediary.\n(3) For the purpose of determining as to whether any person is a ‘fit and proper person’, the Board may take into account any criteria as it deems fit, including but not limited to the following:\n(a) integrity, honesty, ethical behaviour, reputation, fairness and character of the person;\n(b) the person not incurring any of the following disqualifications:\n(i) criminal complaint or information under section 154 of the Code of Criminal Procedure, 1973 (2 of 1974) has been filed against such person by the Board and which is pending;\n(ii) charge sheet has been filed against such person by any enforcement agency in matters concerning economic offences and is pending;\n(iii) an order of restraint, prohibition or debarment has been passed against such person by the Board or any other regulatory authority or enforcement agency in any matter concerning securities laws or financial markets and such order is in force;\n(iv) recovery proceedings have been initiated by the Board against such person and are pending;\n(v) an order of conviction has been passed against such person by a court for any offence involving moral turpitude;\n(vi) any winding up proceedings have been initiated or an order for winding up has been passed against such person;\n(vii) such person has been declared insolvent and not discharged;\n(viii) such person has been found to be of unsound mind by a court of competent jurisdiction and the finding is in force;\n(ix) such person has been categorized as a wilful defaulter;\n(x) such person has been declared a fugitive economic offender; or\n(xi) any other disqualification as may be specified by the Board from time to time.\n(4) Where any person has been declared as not ‘fit and proper person’ by an order of the Board, such a person shall not be eligible to apply for any registration during the period provided in the said order or for a period of five years from the date of effect of the order, if no such period is specified in the order.\n(5) At the time of filing of an application for registration as an intermediary, if any notice to show cause has been issued for proceedings under these regulations or under section 11(4) or section 11B of the Act against the applicant or any other person referred in clause (2), then such an application shall not be considered for grant of registration for a period of one year from the date of issuance of such notice or until the conclusion of the proceedings, whichever is earlier.\n(6) Any disqualification of an associate or group entity of the applicant or intermediary of the nature as referred in sub-clause (b) of clause (3), shall not have any bearing on the ‘fit and proper person’ criteria of the applicant or intermediary unless the applicant or intermediary or any other person referred in clause (2), is also found to incur the same disqualification in the said matter:\nProvided that if any person as referred in sub-clause (b) of clause (2) fails to satisfy the ‘fit and proper person’ criteria, the intermediary shall replace such person within thirty days from the date of such disqualification failing which the ‘fit and proper person’ criteria may be invoked against the intermediary:\nProvided further that if any person as referred in sub-clause (c) of clause (2) fails to satisfy the ‘fit and proper person’ criteria, the intermediary shall ensure that such person does not exercise any voting rights and that such person divests their holding within six months from the date of such disqualification failing which the ‘fit and proper person’ criteria may be invoked against such intermediary.\n(7) The ‘fit and proper person’ criteria shall be applicable at the time of application of registration and during the continuity of registration and the intermediary shall ensure that the persons as referred in sub-clauses (b) and (c) of clause (2) comply with the ‘fit and proper person’ criteria.]",
+      "meaningful_context": "Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008, outlines the 'fit and proper person' criteria. These criteria are crucial for determining the eligibility of applicants, intermediaries, and their key personnel in the Indian securities market. The reference confirms that individuals appointed as directors and/or key personnel must adhere to these specified standards.",
+      "confidence": "High",
+      "reasoning": "Phase 1 (Direct Match) succeeded. The 'sub-reference to find' was 'Schedule II'. The source PDF explicitly contains a section titled 'SCHEDULE II - CRITERIA FOR DETERMINING A ‘FIT AND PROPER PERSON’' starting on page 28. This directly corresponds to the 'criteria specified in Schedule II' mentioned in the original context sentence. The entire content of this schedule, which details the criteria, has been extracted verbatim.",
+      "location_metadata": {
+        "chapter_number": null,
+        "chapter_title": null,
+        "section_number": "Schedule II",
+        "section_title": "CRITERIA FOR DETERMINING A ‘FIT AND PROPER PERSON’",
+        "page_number": 28,
+        "notified_date": "26/05/2008"
+      },
+      "source_url": "[Securities and Exchange Board of India (Intermediaries) Regulations, 2008](https://www.sebi.gov.in/legal/regulations/may-2008/securities-and-exchange-board-of-india-intermediaries-regulations-2008_13612.html)"
+    }
+  },
+  {
+    "reference": "Securities and Exchange Board of India (Registrars to an Issue and Share Transfer Agents) Regulations, 2025",
+    "sub_reference": "",
+    "sentence": "appointed a registrar to an issue and share transfer agent registered under the Securities and Exchange Board of India (Registrars to an Issue and Share Transfer Agents) Regulations, 2025 and established parameters for their supervision;",
+    "source": "SEBI",
+    "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Registrars_to_an_Issue_and_Share_Transfer_Agents)_Regulations,_2025.pdf",
+    "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/1766125665223.pdf",
+    "extracted_details": {
+      "extracted_definition": "(k) “registrar to an issue and share transfer agent” means a body corporate or a division or unit of such body corporate, appointed to carry out the following activities-\n(i) for acting as an intermediary in connection with initial public offers, follow-on public offers, open offers, buy backs of securities, delisting offers, takeovers and such other issue or corporate action related activity as may be specified by the Board or stock exchanges or depositories;\n(ii) for maintaining the records of holders of securities issued by such body corporate and to deal with all matters connected with transactions in such securities;",
+      "meaningful_context": "This provision defines \"registrar to an issue and share transfer agent\" within the context of the Securities and Exchange Board of India (Registrars to an Issue and Share Transfer Agents) Regulations, 2025. It clarifies the scope of their activities, including acting as an intermediary for various corporate actions and maintaining records of security holders. This definition is crucial for understanding the regulated entity mentioned in the original context sentence.",
+      "confidence": "High",
+      "reasoning": "The Subject Term 'registrar to an issue and share transfer agent' was directly searched in the provided Source PDF text. Phase 2 (Heading Search) was successful by locating Regulation 2 (Definitions) on page 25. Within this section, clause (k) on page 26 provides the exact definition of 'registrar to an issue and share transfer agent', matching the core concept from the original context sentence. The text was extracted verbatim, including all sub-clauses.",
+      "location_metadata": {
+        "chapter_number": "CHAPTER I",
+        "chapter_title": "PRELIMINARY",
+        "section_number": "2",
+        "section_title": "Definitions.",
+        "page_number": 26,
+        "notified_date": "15/12/2025"
+      },
+      "source_url": "SEBI regulations (https://www.sebi.gov.in/legal/regulations.html)"
+    }
+  }
+]

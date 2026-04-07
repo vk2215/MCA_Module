@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Compliance Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+
+    <style>
+        :root {
+            --bg: #f1f5f9;
+            --sidebar: #0f172a;
+            --paper-bg: #ffffff;
+            --accent: #2563eb;
+            --font-body: 'Times New Roman', Times, serif;
+            --font-ui: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background: var(--bg);
+            font-family: var(--font-ui);
+        }
+
+        #sidebar {
+            width: 260px;
+            background: var(--sidebar);
+            color: white;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        #sidebar h2 {
+            padding: 20px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .chap-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #cbd5e1;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .chap-item.active {
+            background: #1e293b !important;
+            color: #ffffff !important;
+            border-left: 4px solid #ffffff;
+            font-weight: 600;
+        }
+
+        #main {
+            margin-left: 260px;
+            padding: 40px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .paper {
+            background: var(--paper-bg);
+            padding: 60px 80px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+            font-family: var(--font-body);
+            font-size: 12pt;
+            line-height: 1.5;
+            color: #000;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            margin: 0 0 22px 0;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0 0 8px 0;
+        }
+
+        .chapter-subtitle {
+            text-align: center;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+        }
+
+        .pdf-page-break {
+            margin-top: 40px;
+        }
+
+        .sch-header {
+            text-align: center;
+            font-weight: 700;
+            font-size: 18pt;
+            margin: 30px 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .sch-subtitle {
+            text-align: center;
+            font-size: 13pt;
+            margin-bottom: 10px;
+        }
+
+        .clause-row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .marker {
+            flex: 0 0 55px;
+            font-weight: bold;
+        }
+
+        .body {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .l1 {
+            margin-left: 0;
+            font-weight: bold;
+        }
+
+        .l2 {
+            margin-left: 20px;
+        }
+
+        .l3 {
+            margin-left: 45px;
+        }
+
+        .l4 {
+            margin-left: 70px;
+        }
+
+
+        .clause {
+            display: flex;
+            align-items: flex-start;
+            margin: 8px 0;
+        }
+
+
+        .clause-marker {
+            width: 70px;
+            text-align: right;
+            padding-right: 10px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+
+        .clause-body {
+            flex: 1;
+            line-height: 1.6;
+        }
+
+
+        .clause-l1 {
+            margin-left: 0px;
+        }
+
+        .clause-l2 {
+            margin-left: 30px;
+        }
+
+        .clause-l3 {
+            margin-left: 60px;
+        }
+
+        .clause-l4 {
+            margin-left: 90px;
+        }
+
+        .clause-l5 {
+            margin-left: 120px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0;
+            table-layout: auto;
+            border: 1.5px solid #000;
+        }
+
+        th,
+        td {
+            border: 1px solid #000 !important;
+            padding: 6px 8px;
+            text-align: left;
+            vertical-align: top;
+            font-size: 10.5pt;
+            line-height: 1.4;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        td p,
+        th p {
+            margin: 0;
+            text-align: left;
+        }
+
+        th {
+            background: #f8fafc;
+            font-weight: 700;
+            text-align: center;
+        }
+
+
+        .hover-term {
+            color: inherit !important;
+            font-weight: inherit !important;
+            text-decoration: underline solid #000 !important;
+            cursor: help;
+            transition: all 0.2s ease;
+        }
+
+        .hover-term:hover {
+            background-color: #f1f5f9;
+        }
+
+        .reg-bold-highlight {
+            font-weight: 700 !important;
+            color: #1d4ed8 !important;
+            /* MCA blue */
+            text-decoration: underline !important;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .reg-bold-highlight:hover {
+            background-color: #eff6ff;
+            color: #1e3a8a !important;
+        }
+
+        .hover-ref {
+            color: #2563eb !important;
+            font-weight: 600 !important;
+            text-decoration: underline !important;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .hover-ref:hover {
+            background-color: #eff6ff;
+            color: #1d4ed8 !important;
+        }
+
+        .mca-popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 12px;
+        }
+
+        .mca-dots {
+            display: flex;
+            gap: 10px;
+        }
+
+        .mca-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+
+        .dot-green {
+            background: #22c55e;
+        }
+
+        .dot-orange {
+            background: #f97316;
+        }
+
+        .dot-blue {
+            background: #2563eb;
+        }
+
+        .ref-modal-shell {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .ref-popup-content {
+            padding: 50px 70px;
+            box-sizing: border-box;
+            font-family: 'Inter', var(--font-ui);
+            text-align: justify;
+            line-height: 1.8;
+            color: #334155;
+            font-size: 0.98rem;
+            max-height: 75vh;
+            overflow-y: auto;
+        }
+
+        /* Scrollbar styling to match screenshot */
+        .ref-popup-content::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        .ref-popup-content::-webkit-scrollbar-thumb {
+            background-color: #3b82f6;
+            /* Blue scrollbar */
+            border-radius: 10px;
+        }
+
+        .ref-popup-content::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        /* Theme-specific overrides for popups */
+        .tippy-box[data-theme~='light-border'] {
+            background-color: #ffffff !important;
+            border: 1px solid #cbd5e1;
+            padding: 5px;
+            color: #000 !important;
+        }
+
+        .tippy-box[data-theme~='mca-modal'] {
+            background-color: transparent !important;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+            border: none !important;
+            margin: 0 !important;
+
+            /* Positioning to center in the window */
+            position: fixed !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+
+
+            width: 85vw !important;
+            height: auto !important;
+            max-height: 85vh !important;
+            max-width: 1200px !important;
+
+            z-index: 9999 !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .tippy-content {
+            padding: 0 !important;
+            height: auto !important;
+            max-height: 85vh !important;
+            overflow-y: auto !important;
+        }
+
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 1999;
+            backdrop-filter: blur(2px);
+            pointer-events: all;
+        }
+
+        .mca-verbatim {
+            font-weight: 400;
+        }
+
+        .mca-bold-orange {
+            color: #ea580c;
+            /* Sharper orange */
+            font-weight: bold;
+        }
+
+        .mca-blue-link {
+            color: #2563eb;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .mca-header-title {
+            font-weight: 800;
+            color: #000;
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            text-align: center;
+            border-bottom: 1.5px solid #2563eb;
+            padding-bottom: 12px;
+        }
+
+        .mca-authority-badge {
+            background: #f0f7ff;
+            color: #2563eb;
+            padding: 5px 14px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            width: fit-content;
+            margin: 0;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mca-meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 25px 0;
+            width: 100%;
+        }
+
+        .source-line {
+            border-top: 1px dashed #cbd5e1;
+            margin: 25px 0 10px 0;
+            padding-top: 8px;
+            font-size: 0.78rem;
+            color: #64748b;
+            font-style: italic;
+            font-weight: 600;
+            display: block;
+        }
+
+        .clause-line {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            line-height: 1.7;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .clause-num {
+            font-weight: 700;
+            color: #ea580c;
+            /* Sharper orange */
+            flex: 0 0 50px;
+            text-align: left;
+            padding-right: 5px;
+        }
+
+        .clause-text {
+            flex: 1;
+            text-align: justify;
+            color: #334155;
+            padding-right: 15px;
+            /* Important right gutter */
+        }
+
+
+        .nested-pt {
+            display: inline-block;
+            margin-top: 6px;
+            padding-left: 10px;
+            font-weight: normal;
+        }
+
+        .glossary-popup-inner {
+            padding: 22px;
+            background: white;
+            color: black;
+            max-height: 70vh;
+            overflow-y: auto;
+            border-radius: 10px;
+            text-align: justify;
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        .glossary-popup-inner::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        .glossary-popup-inner::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <h2>Regulations</h2>
+        <div id="chapter-list">Loading...</div>
+    </div>
+
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <div id="main">
+        <div id="content-area" class="paper">Select a chapter from the sidebar.</div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+        const md = window.markdownit({ html: true, linkify: true, typographer: false });
+
+        function isTableLine(line) {
+            return /^\s*\|/.test(line);
+        }
+
+        function cleanInlineMarkdown(line) {
+            return line.replace(/\*\*/g, '').trim();
+        }
+
+        function isHeadingLine(line) {
+            const plain = cleanInlineMarkdown(line);
+            return /^(CHAPTER\s+[IVXLC0-9]+|PRELIMINARY|PROCEDURE FOR REGISTRATION OF A MUTUAL FUND)$/i.test(plain);
+        }
+
+        function isClauseStart(line) {
+            const plain = cleanInlineMarkdown(line);
+            return /^\d+\./.test(plain)
+                || /^\(\d+\)/.test(plain)
+                || /^\(([ivxlcdm]+)\)/i.test(plain)
+                || /^\(([a-z]{1,3})\)/i.test(plain)
+                || /^[a-z]\./i.test(plain);
+        }
+
+        function preprocessLegalMarkdown(rawText) {
+            const lines = rawText
+                .replace(/\r/g, '')
+                .replace(/\*\*/g, '')
+                .split('\n');
+            const blocks = [];
+            let paragraph = '';
+            let tableLines = [];
+
+            const flushParagraph = () => {
+                if (paragraph.trim()) {
+                    blocks.push(paragraph.trim());
+                    paragraph = '';
+                }
+            };
+
+            const flushTable = () => {
+                if (tableLines.length) {
+                    blocks.push(tableLines.join('\n'));
+                    tableLines = [];
+                }
+            };
+
+            for (const sourceLine of lines) {
+                const line = sourceLine.replace(/\s+$/g, '');
+                const trimmed = line.trim();
+
+                if (!trimmed) {
+                    flushParagraph();
+                    flushTable();
+                    continue;
+                }
+
+                if (isTableLine(trimmed)) {
+                    flushParagraph();
+                    tableLines.push(trimmed);
+                    continue;
+                }
+
+                flushTable();
+
+                if (isHeadingLine(trimmed)) {
+                    flushParagraph();
+                    blocks.push(trimmed);
+                    continue;
+                }
+
+                if (isClauseStart(trimmed)) {
+                    flushParagraph();
+                    paragraph = trimmed;
+                    continue;
+                }
+
+                if (!paragraph) {
+                    paragraph = trimmed;
+                } else {
+                    paragraph += ` ${trimmed}`;
+                }
+            }
+
+            flushParagraph();
+            flushTable();
+            return blocks.join('\n\n');
+        }
+
+        function detectClauseClass(text) {
+            const plain = text.trim();
+
+            if (/^\d+\./.test(plain)) return 'clause-l1';
+
+            if (/^\(\d+\)/.test(plain)) return 'clause-l2';
+
+
+            if (/^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii|xiii|xiv|xv)\)/i.test(plain))
+                return 'clause-l4';
+
+            if (/^\([a-z]{1,3}\)/i.test(plain))
+                return 'clause-l3';
+
+            if (/^[a-z]\./i.test(plain)) return 'clause-l5';
+
+            return '';
+        }
+        function wrapClauseMarkers(container) {
+            const markerPattern = /^(\d+\.|\(\d+\)|\([a-z]{1,3}\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii|xiii|xiv|xv)\)|[a-z]\.)\s+/i;
+
+            const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+            container.querySelectorAll('p.clause').forEach(p => {
+                if (p.querySelector('.clause-marker')) return;
+
+                const text = p.textContent.replace(/\s+/g, ' ').trim();
+                const textMatch = text.match(markerPattern);
+                if (!textMatch) return;
+
+                const marker = textMatch[1];
+                const escapedMarker = escapeRegExp(marker);
+
+                const html = p.innerHTML.trim();
+                const leadingMarkerRegex = new RegExp(
+                    `^(?:\\s|&nbsp;)*(?:<strong>)?\\s*${escapedMarker}\\s*(?:<\\/strong>)?(?:\\s|&nbsp;)*`,
+                    'i'
+                );
+
+                let bodyHtml = html.replace(leadingMarkerRegex, '').trim();
+                if (!bodyHtml) {
+                    bodyHtml = text.slice(textMatch[0].length).trim();
+                }
+
+                p.innerHTML = `<span class="clause-marker">${marker}</span><span class="clause-body">${bodyHtml}</span>`;
+            });
+        }
+
+        function postProcessLayout(container) {
+            container.querySelectorAll('p').forEach(p => {
+                const text = p.textContent.replace(/\s+/g, ' ').trim();
+                if (!text) return;
+
+                const clauseClass = detectClauseClass(text);
+                if (clauseClass) {
+                    p.classList.add('clause', clauseClass);
+                } else if (/^[A-Z\s]+$/.test(text) && text.length <= 60) {
+                    p.classList.add('chapter-subtitle');
+                }
+            });
+
+            container.querySelectorAll('table td, table th').forEach(cell => {
+                const cellText = cell.textContent.replace(/\s+/g, ' ').trim();
+                // Clear cells that are only placeholder column names like Col1, Col2 etc.
+                if (/^Col\d+$/i.test(cellText)) {
+                    cell.innerHTML = '';
+                }
+                // Clean **bold markers** left in table cells
+                cell.innerHTML = cell.innerHTML.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            });
+
+            // Auto-detect and minimize first column if it's all short (row numbers/markers)
+            container.querySelectorAll('table').forEach(table => {
+                const rows = Array.from(table.querySelectorAll('tr'));
+                if (!rows.length) return;
+
+                const numCols = rows[0].querySelectorAll('td, th').length;
+
+                rows.forEach(row => {
+                    const cells = Array.from(row.querySelectorAll('td, th'));
+                    if (cells.length < 2) return;
+
+                    // Spanning row detection: all non-empty cells contain the same text
+                    const nonEmpty = cells.filter(c => c.textContent.trim().length > 0);
+                    if (nonEmpty.length >= 2) {
+                        const firstText = nonEmpty[0].textContent.trim();
+                        const allSame = nonEmpty.every(c => c.textContent.trim() === firstText);
+                        if (allSame) {
+                            // Collapse into a single spanning cell
+                            const spanCell = cells[0];
+                            spanCell.setAttribute('colspan', numCols);
+                            spanCell.style.textAlign = 'left';
+                            spanCell.style.fontWeight = 'bold';
+                            spanCell.style.background = '#f0f4f8';
+                            // Remove the duplicate cells
+                            for (let c = 1; c < cells.length; c++) cells[c].remove();
+                            return; // skip first-column narrowing for this row
+                        }
+                    }
+
+                    // Single non-empty cell with empty others => spanning row too
+                    if (nonEmpty.length === 1 && cells.length > 1) {
+                        const spanCell = cells[0].textContent.trim() ? cells[0] : nonEmpty[0];
+                        spanCell.setAttribute('colspan', numCols);
+                        spanCell.style.textAlign = 'left';
+                        spanCell.style.fontWeight = 'bold';
+                        spanCell.style.background = '#f0f4f8';
+                        cells.forEach(c => { if (c !== spanCell) c.remove(); });
+                        return;
+                    }
+                });
+
+                // Auto-narrow first column only when all first cells are short markers
+                const firstCells = Array.from(table.querySelectorAll('tr td:first-child, tr th:first-child'))
+                    .filter(c => !c.hasAttribute('colspan'));
+                const allShort = firstCells.length > 0 && firstCells.every(c => c.textContent.trim().length <= 5);
+                if (allShort) {
+                    firstCells.forEach(c => {
+                        c.style.width = '5%';
+                        c.style.whiteSpace = 'nowrap';
+                        c.style.textAlign = 'center';
+                    });
+                }
+            });
+        }
+
+        fetch('/api/chapters')
+            .then(r => r.json())
+            .then(data => {
+                const list = document.getElementById('chapter-list');
+                list.innerHTML = data.map(c => `
+                    <li class="chap-item" onclick="loadChapter('${c}')">Chapter ${c}</li>
+                `).join('');
+            });
+
+        async function loadChapter(name) {
+            const area = document.getElementById('content-area');
+            document.querySelectorAll('.chap-item').forEach(el => el.classList.remove('active'));
+
+            const items = document.querySelectorAll('.chap-item');
+            items.forEach(item => {
+                if (item.innerText.trim().endsWith(` ${name}`)) {
+                    item.classList.add('active');
+                }
+            });
+
+            area.innerHTML = '<em>Loading...</em>';
+
+            try {
+                const res = await fetch(`/api/content/${name}`);
+                const data = await res.json();
+                const normalized = preprocessLegalMarkdown(data.html_content);
+
+                area.innerHTML = `<h1>Chapter ${name}</h1>${md.render(normalized)}`;
+
+                postProcessLayout(area);
+                wrapClauseMarkers(area);
+                document.getElementById('main').scrollTop = 0;
+
+                tippy('.hover-term', {
+                    content: 'Loading...',
+                    allowHTML: true,
+                    theme: 'light-border',
+                    interactive: true,
+                    maxWidth: 600,
+                    appendTo: () => document.body,
+                    boundary: 'viewport',
+                    placement: 'auto',
+                    onShow(instance) {
+                        const id = instance.reference.getAttribute('data-id');
+                        fetch(`/api/definition/${id}`).then(r => r.json()).then(d => {
+                            let text = (d.verbatim || '').trim();
+
+                            // 1. Convert Markdown bold **Explanation:** to <strong>
+                            text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+                            // 2. Identify structural points while we still have original newlines (\n)
+                            // Level 1: (i), (ii), (iv)
+                            text = text.replace(/(^|\n)\s*(\([ivxlcdm]+\))/gi, '$1<br><span class="nested-pt" style="margin-left:10px;">$2</span>');
+
+                            // Level 2: a., b., c. (Only at start of line to avoid splitting words like holders.)
+                            text = text.replace(/(^|\n)\s*([a-z]\.\s+)/gi, '$1<br><span class="nested-pt" style="margin-left:35px; border-left:1px solid #cbd5e1;">$2</span>');
+
+                            // 3. Clean up accidental single newlines that aren't at the start of points
+                            text = text.replace(/\n/g, ' ');
+
+                            let formatted = text
+                                // Ensure Explanation starts on its own paragraph
+                                .replace(/(Explanation:)/gi, '<br><br><strong>$1</strong>')
+                                // Bolding key legal phrases
+                                .replace(/\b(Provided that|Provided)\b/gi, '<strong>$1</strong>');
+
+                            instance.setContent(`
+                                <div class="glossary-popup-inner">
+                                    <strong style="color:#2563eb; display:block; margin-bottom:12px; font-size: 1.1rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 6px;">${d.term}</strong>
+                                    <div style="font-size: 0.95rem; line-height: 1.6; color: #334155;">
+                                        ${formatted}
+                                    </div>
+                                </div>
+                            `);
+                        });
+                    }
+                });
+
+                tippy('.hover-ref, .reg-bold-highlight', {
+                    content: '<div class="ref-popup-content">Loading details...</div>',
+                    allowHTML: true,
+                    theme: 'mca-modal',
+                    interactive: true,
+                    trigger: 'click',
+                    maxWidth: 800,
+                    arrow: false,
+                    appendTo: () => document.body,
+                    popperOptions: {
+                        modifiers: [
+                            {
+                                name: 'applyStyles',
+                                enabled: false, // Force it to use our fixed CSS instead of popper positioning
+                            },
+                        ],
+                    },
+                    onShow(instance) {
+                        tippy.hideAll(); // Close any other open tooltips
+                        document.getElementById('modal-overlay').style.display = 'block';
+                        const refId = instance.reference.getAttribute('data-ref-id');
+                        const url = refId ? `/api/reference/${refId}` : null;
+
+                        if (!url) {
+                            instance.setContent('<div class="ref-popup-content">Searching additional indexes...</div>');
+                            return;
+                        }
+
+                        fetch(url)
+                            .then(r => r.json())
+                            .then(d => {
+                                // --- Priority-based Content Selector ---
+                                let rawContent = '';
+                                if (d.extracted_details?.extracted_definition || d.extracted_definition) {
+                                    rawContent = (d.extracted_details?.extracted_definition || d.extracted_definition);
+                                } else if (d.extracted_details?.verbatim || d.verbatim) {
+                                    rawContent = (d.extracted_details?.verbatim || d.verbatim);
+                                } else {
+                                    const sourceText = d.sentence || d.sub_reference || 'Details are being indexed.';
+                                    rawContent = `Displaying original context sentence (formal definition currently missing in source):\n\n${sourceText}`;
+                                }
+                                // Refined to only target markers at the start of lines to avoid splitting headers like "Section 11(2)(c)"
+                                const markerRegex = /(^|\n)\s*(\d+\([a-z]{1,2}\)|\(\d+\)|\([a-z]\)|[a-z]\.\s+|\([ivxlcdm]+\)|Explanation:|Provided that:?)/gi;
+
+                                let cleanInput = rawContent.replace(/\s+$/gm, '').replace(/\r/g, '');
+                                // We split keep the separator to capture the newline and the marker
+                                let parts = cleanInput.split(markerRegex);
+                                let htmlFragments = []; // Start empty without the 'Requested Section' header
+
+                                let currentMarker = '';
+                                let currentBuffer = '';
+
+                                // Smart Hierarchy Tracker
+                                let hierarchyContext = [];
+
+                                function getIndentLevel(m) {
+                                    const raw = m.trim();
+                                    const val = raw.toLowerCase();
+                                    const isCaps = /^\([A-Z]\)/.test(raw);
+
+                                    // Identify Marker Type
+                                    let type = 'numeric'; // (1)
+                                    if (/^\([ivxlcdm]+\)/.test(val)) type = 'roman'; // (i)
+                                    else if (isCaps) type = 'caps'; // (A)
+                                    else if (/^\([a-z]{1,3}\)/.test(val)) type = 'alpha'; // (a)
+                                    else if (/^explanation|^provided/i.test(val)) type = 'special';
+
+                                    // Hierarchy Definition (Standard Legal Flow)
+                                    // Typically: Numeric -> Alpha -> Roman -> Alpha-Caps -> Sub-Numeric
+                                    // BUT some acts (Companies Act) are: Numeric -> Roman -> Alpha -> Numeric
+
+                                    // We'll use a dynamic depth based on the stack
+                                    if (type === 'special') return 0;
+
+                                    // If we see a marker type we've seen before, we reset the stack to that level
+                                    const existingIdx = hierarchyContext.indexOf(type);
+                                    if (existingIdx !== -1) {
+                                        hierarchyContext = hierarchyContext.slice(0, existingIdx + 1);
+                                    } else {
+                                        hierarchyContext.push(type);
+                                    }
+
+                                    return hierarchyContext.length;
+                                }
+
+                                function flushBlock() {
+                                    let content = currentBuffer.trim();
+                                    if (!content && !currentMarker) return;
+
+                                    const processedContent = styleLegalTerms(currentBuffer.trim());
+
+                                    if (currentMarker) {
+                                        const level = getIndentLevel(currentMarker);
+                                        const m = currentMarker.toLowerCase();
+
+                                        if (/^explanation|^provided/i.test(m)) {
+                                            htmlFragments.push(`<div style="margin-top: 15px; margin-bottom: 8px; border-left: 3px solid #f97316; padding-left: 12px; background: #fffaf5; margin-right: 20px;"><strong>${currentMarker}</strong> ${processedContent}</div>`);
+                                            return;
+                                        }
+
+                                        // 35px per level
+                                        const padding = (level - 1) * 35;
+
+                                        htmlFragments.push(`
+                                            <div class="clause-line" style="margin-bottom: 12px; display: flex; align-items: flex-start; padding-left: ${padding}px; padding-right: 20px;">
+                                                <div class="clause-num" style="min-width: 50px; flex-shrink: 0; font-weight: 700; color: #ea580c; font-size: 0.92rem;">${currentMarker}</div>
+                                                <div class="clause-text" style="flex-grow: 1; margin-right: 15px;">${processedContent}</div>
+                                            </div>
+                                        `);
+                                    } else {
+                                        // Headers
+                                        const isHeader = content.length < 100 && /section|regulation|chapter|schedule|definition/i.test(content);
+                                        const style = isHeader ? 'font-weight: 800; color: #1e293b; margin: 25px 0 10px 0; font-size: 1.05rem; border-left: 4px solid #2563eb; padding-left: 12px; background: #f8fafc; margin-right: 20px;' : 'margin-bottom: 15px; margin-right: 20px;';
+                                        htmlFragments.push(`<div style="${style}">${processedContent}</div>`);
+                                    }
+                                }
+
+                                function styleLegalTerms(txt) {
+                                    if (!txt) return '';
+                                    return txt
+                                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                                        .replace(/\b(Provided that|Provided)\b/gi, '<strong>$1</strong>')
+                                        // Handle double newlines as paragraph gaps
+                                        .replace(/\n\n/g, '</div><div style="margin-bottom:12px;">')
+                                        // Handle single newlines as line breaks
+                                        .replace(/\n/g, '<br>');
+                                }
+
+                                // Since we used (^|\n), parts will be: [text, newline|empty, marker, text, newline|empty, marker, ...]
+                                // The split with capture groups (^|\n) will produce i%3 pattern
+                                for (let i = 0; i < parts.length; i++) {
+                                    const p = parts[i];
+                                    if (i % 3 === 0) { // Text before marker
+                                        currentBuffer = p;
+                                    } else if (i % 3 === 1) { // The newline/start position
+                                        continue;
+                                    } else if (i % 3 === 2) { // The marker
+                                        flushBlock();
+                                        currentMarker = p.trim();
+                                        currentBuffer = '';
+                                    }
+                                }
+                                flushBlock();
+
+                                const metadataParts = [];
+                                if (d.source) metadataParts.push(`Source: ${d.source}`);
+                                if (d.extracted_details?.location_metadata?.page_number) metadataParts.push(`Page: ${d.extracted_details.location_metadata.page_number}`);
+                                if (d.extracted_details?.location_metadata?.notified_date) metadataParts.push(`Notified: ${d.extracted_details.location_metadata.notified_date}`);
+
+                                const authorityBlock = metadataParts.length > 0
+                                    ? `<div class="mca-authority-badge">${metadataParts.join(' | ')}</div>`
+                                    : '';
+
+                                 const pdfLinkBlock = d.source_pdf_url ? `
+                                    <div style="margin: 0;">
+                                        <a href="${d.source_pdf_url}" target="_blank" class="mca-blue-link" 
+                                           style="font-size: 0.78rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 5px 12px; border: 1px solid #bfdbfe; border-radius: 4px; background: #fff; transition: all 0.2s;"
+                                           onmouseover="this.style.background='#f0f7ff'; this.style.borderColor='#2563eb'"
+                                           onmouseout="this.style.background='#fff'; this.style.borderColor='#bfdbfe'">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                            </svg>
+                                            View Original Source PDF
+                                        </a>
+                                    </div>
+                                ` : '';
+
+                                let nestedBlock = '';
+                                if (d.extracted_details?.nested_provisions?.length > 0) {
+                                    nestedBlock = `
+                                        <div style="margin-top: 30px; border-top: 1.5px solid #cbd5e1; padding-top: 20px;">
+                                            <div style="font-weight: 800; font-size: 0.82rem; color: #475569; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                                Detailed Clause Breakdown
+                                            </div>
+                                            ${d.extracted_details.nested_provisions.map(p => `
+                                                <div style="margin-bottom: 12px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: transform 0.1s ease-in-out;" onmouseover="this.style.transform='translateX(4px)'" onmouseout="this.style.transform='none'">
+                                                    <div style="font-weight: 700; color: #2563eb; font-size: 0.88rem; margin-bottom: 6px; border-bottom: 1px dashed #e2e8f0; padding-bottom: 4px;">${p.label}</div>
+                                                    <div style="font-size: 0.95rem; color: #1e293b; line-height: 1.6;">${styleLegalTerms(p.text)}</div>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    `;
+                                }
+
+                                instance.setContent(`
+                                    <div class="ref-modal-shell">
+                                        <div class="ref-popup-content mca-verbatim">
+                                            <div class="mca-popup-header">
+                                                <div class="mca-dots">
+                                                    <div class="mca-dot dot-green"></div>
+                                                    <div class="mca-dot dot-orange"></div>
+                                                    <div class="mca-dot dot-blue"></div>
+                                                </div>
+                                                <div style="cursor:pointer; font-weight: bold; font-size: 1.4rem; color:#64748b; transition: color 0.2s;" onmouseover="this.style.color='#ef4444'" onmouseout="this.style.color='#64748b'" onclick="tippy.hideAll()">×</div>
+                                            </div>
+                                            
+                                            <div class="mca-header-title">${d.reference || 'Legal Reference'}</div>
+                                            <div class="mca-meta-row">
+                                                ${authorityBlock}
+                                                ${pdfLinkBlock}
+                                            </div>
+                                            
+                                            <div id="mca-modal-body" style="margin-bottom: 30px;">
+                                                ${htmlFragments.join('')}
+                                                ${nestedBlock}
+                                            </div>
+                                        </div>
+                                    </div>
+                                `);
+                            })
+                            .catch(e => {
+                                instance.setContent('<div class="ref-popup-content">Error loading reference details.</div>');
+                            });
+                    },
+                    onHide(instance) {
+                        document.getElementById('modal-overlay').style.display = 'none';
+                    }
+                });
+            } catch (err) {
+                area.innerHTML = 'Error loading chapter.';
+            }
+        }
+    </script>
+</body>
+
+</html>

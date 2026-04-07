@@ -1,0 +1,223 @@
+{
+  "source_pdf": "Regulations 16 jan.pdf",
+  "extraction_date": "2026-04-02 16:38:46",
+  "total_references": 27,
+  "references": [
+    {
+      "reference": "Securities and Exchange Board of India (Mutual Funds) Regulations, 2026",
+      "sub_reference": null,
+      "sentence": "These regulations may be called the Securities and Exchange Board of India (Mutual Funds) Regulations, 2026.",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Mutual_Funds)_Regulations,_2026.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/jan-2026/1768987928534.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India Act, 1992 (15 of 1992)",
+      "sub_reference": null,
+      "sentence": "“Act” means the Securities and Exchange Board of India Act, 1992 (15 of 1992);",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_Act,_1992.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/acts/act15ac.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012",
+      "sub_reference": "clause (ab) of sub- regulation (1) of regulation 2",
+      "sentence": "“accredited investor” shall have the same meaning as assigned to it in clause (ab) of sub- regulation (1) of regulation 2 of the Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Alternative_Investment_Funds)_Regulations,_2012.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2023/1679547306480.pdf"
+    },
+    {
+      "reference": "Companies Act 1956 (1 of 1956)",
+      "sub_reference": null,
+      "sentence": "“asset management company” means a company incorporated under the Companies Act 1956 (1 of 1956) or Companies Act, 2013 (18 of 2013) and approved by the Board under regulation 18;",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Companies_Act_1956.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/12807/1/the_companies_act,_1956_no._1_of_1956_date_01.01.1956.pdf"
+    },
+    {
+      "reference": "Companies Act, 2013 (18 of 2013)",
+      "sub_reference": null,
+      "sentence": "“asset management company” means a company incorporated under the Companies Act 1956 (1 of 1956) or Companies Act, 2013 (18 of 2013) and approved by the Board under regulation 18;",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Companies_Act,_2013.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf#search=Companies Act, 2013"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Stock Brokers) Regulations, 2026",
+      "sub_reference": null,
+      "sentence": "“broker” means a stock broker as defined in the Securities and Exchange Board of India (Stock Brokers) Regulations, 2026;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Stock_Brokers)_Regulations,_2026.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/jan-2026/1767852346757.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012",
+      "sub_reference": "clause (ga) of sub-regulation (1) of regulation 2",
+      "sentence": "Corporate Debt Market Development Fund shall have the same meaning assigned to it under clause (ga) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Alternative Investment Funds) Regulations, 2012;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Alternative_Investment_Funds)_Regulations,_2012.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2025/1741064832837.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Custodian) Regulations, 1996",
+      "sub_reference": null,
+      "sentence": "“custodian” means a person who has been granted a certificate of registration to carry on the business of custodian of securities under the Securities and Exchange Board of India (Custodian) Regulations, 1996;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Custodian)_Regulations,_1996.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2025/1758886606773.pdf"
+    },
+    {
+      "reference": "Depositories Act, 1996 (22 of 1996)",
+      "sub_reference": null,
+      "sentence": "“depository” means a body corporate as defined in the Depositories Act, 1996 (22 of 1996);",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Depositories_Act,_1996.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1955/1/A1996_22.pdf#search=Depositories Act, 1996"
+    },
+    {
+      "reference": "Fugitive Economic Offenders Act, 2018 (17 of 2018)",
+      "sub_reference": null,
+      "sentence": "“economic offence” means an offence under the Fugitive Economic Offenders Act, 2018 (17 of 2018);",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Fugitive_Economic_Offenders_Act,_2018.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/4035/1/A2018-17.pdf#search=Fugitive Economic Offenders Act, 2018"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices Relating to Securities Market) Regulations, 2003",
+      "sub_reference": "clause (c) of sub-regulation (1) of regulation 2",
+      "sentence": "“fraud” means a fraud as defined in clause (c) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices Relating to Securities Market) Regulations, 2003;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Prohibition_of_Fraudulent_and_Unfair_Trade_Practices_Relating_to_Securities_Mark.pdf",
+      "source_pdf_url": ""
+    },
+    {
+      "reference": "Companies Act, 2013 (18 of 2013)",
+      "sub_reference": null,
+      "sentence": "“free reserve” shall have the same meaning as defined under Companies Act, 2013 (18 of 2013);",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Companies_Act,_2013.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf#search=Companies Act, 2013"
+    },
+    {
+      "reference": "Securities Contracts (Regulation) Act, 1956",
+      "sub_reference": "clause (bc) of section 2",
+      "sentence": "“goods” means the goods notified by the Central Government under clause (bc) of section 2 of the Securities Contracts (Regulation) Act, 1956 and forming the underlying of any commodity derivative;",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Securities_Contracts_(Regulation)_Act,_1956.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1644/1/A1956-42.pdf#search=Securities Contracts (Regulation) Act, 1956"
+    },
+    {
+      "reference": "Competition Act, 2002 (12 of 2003)",
+      "sub_reference": "clause (b) of the Explanation to Section 5",
+      "sentence": "“group” means a group as defined in clause (b) of the Explanation to Section 5 of the Competition Act, 2002 (12 of 2003);",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Competition_Act,_2002.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2010/7/A2003-12.pdf#search=Competition Act, 2002"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations, 2014",
+      "sub_reference": "clause (za) of sub-regulation (1) of regulation 2",
+      "sentence": "“InvIT” or “Infrastructure Investment Trust” shall have the meaning assigned in clause (za) of sub-regulation (1) of regulation 2 of the Securities and Exchange Board of India (Infrastructure Investment Trusts) Regulations, 2014;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Infrastructure_Investment_Trusts)_Regulations,_2014.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/apr-2025/1744094984332.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003",
+      "sub_reference": null,
+      "sentence": "“market abuse” includes manipulative, fraudulent and unfair trade practices which may contravene Section 12A of the Act or any of the provisions of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003 or the Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Prohibition_of_Fraudulent_and_Unfair_Trade_Practices_relating_to_Securities_Mark.pdf",
+      "source_pdf_url": ""
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015",
+      "sub_reference": null,
+      "sentence": "“market abuse” includes manipulative, fraudulent and unfair trade practices which may contravene Section 12A of the Act or any of the provisions of the Securities and Exchange Board of India (Prohibition of Fraudulent and Unfair Trade Practices relating to Securities Market) Regulations, 2003 or the Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Prohibition_of_Insider_Trading)_Regulations,_2015.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/commondocs/annexureinsidertrading.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Real Estate Investment Trusts) Regulations, 2014",
+      "sub_reference": "clause (zm) of sub-regulation 1 of regulation 2",
+      "sentence": "“REIT” or “Real Estate Investment Trust” shall have the meaning assigned in clause (zm) of sub-regulation 1 of regulation 2 of the Securities and Exchange Board of India (Real Estate Investment Trusts) Regulations, 2014;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Real_Estate_Investment_Trusts)_Regulations,_2014.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/apr-2025/1745580009796.pdf"
+    },
+    {
+      "reference": "Companies Act, 2013 (18 of 2013)",
+      "sub_reference": "section 2(77)",
+      "sentence": "“relative” means a person as defined in section 2(77) of the Companies Act, 2013 (18 of 2013);",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Companies_Act,_2013.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf#search=Companies Act, 2013"
+    },
+    {
+      "reference": "Securities Contracts (Regulation) Act, 1956 (42 of 1956)",
+      "sub_reference": null,
+      "sentence": "“securities laws” means the Act, the Securities Contracts (Regulation) Act, 1956 (42 of 1956), the Depositories Act, 1996 (22 of 1996) and the provision of any other law to the extent it is administered by the Board and the relevant rules and regulations made thereunder;",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Securities_Contracts_(Regulation)_Act,_1956.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1644/1/A1956-42.pdf#search=Securities Contracts (Regulation) Act, 1956"
+    },
+    {
+      "reference": "Depositories Act, 1996 (22 of 1996)",
+      "sub_reference": null,
+      "sentence": "“securities laws” means the Act, the Securities Contracts (Regulation) Act, 1956 (42 of 1956), the Depositories Act, 1996 (22 of 1996) and the provision of any other law to the extent it is administered by the Board and the relevant rules and regulations made thereunder;",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Depositories_Act,_1996.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/1955/1/A1996_22.pdf#search=Depositories Act, 1996"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Debenture Trustees) Regulations, 1993",
+      "sub_reference": null,
+      "sentence": "Further, “trustees” in case of mutual fund Lite shall mean a debenture trustee registered with the Board under the Securities and Exchange Board of India (Debenture Trustees) Regulations, 1993; in case an existing sponsor transfers its eligible passive schemes from its existing mutual fund to a mutual fund lite in accordance with regulation 58, the MF Lite asset management company may appoint the existing trustee of the mutual fund as the trustee of the mutual fund lite;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Debenture_Trustees)_Regulations,_1993.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2024/1723196882810.pdf"
+    },
+    {
+      "reference": "Registration Act, 1908 (16 of 1908)",
+      "sub_reference": null,
+      "sentence": "A mutual fund shall be constituted in the form of a trust and the instrument of trust shall be in the form of a deed, duly registered under the provisions of the Registration Act, 1908 (16 of 1908), executed by the sponsor in favour of the trustee named in such an instrument.",
+      "source": "Indiacode",
+      "pdf_path": "repository\\Registration_Act,_1908.pdf",
+      "source_pdf_url": "https://www.indiacode.nic.in/bitstream/123456789/2190/5/A1908-16.pdf#search=Registration Act, 1908"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+      "sub_reference": "Schedule II",
+      "sentence": "A person shall be eligible to be appointed as a trustee only if that person — (a) complies with fit and proper person criteria specified in Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Intermediaries)_Regulations,_2008.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2024/1725011743767.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+      "sub_reference": "Schedule II",
+      "sentence": "The asset management company shall comply with fit and proper person criteria specified in Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008.",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Intermediaries)_Regulations,_2008.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2022/1659683424967.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Intermediaries) Regulations, 2008",
+      "sub_reference": "Schedule II",
+      "sentence": "The persons so appointed as director and/ or key personnel shall also be fit and proper persons in accordance with the criteria specified in Schedule II of the Securities and Exchange Board of India (Intermediaries) Regulations, 2008.",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Intermediaries)_Regulations,_2008.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2024/1725011743767.pdf"
+    },
+    {
+      "reference": "Securities and Exchange Board of India (Registrars to an Issue and Share Transfer Agents) Regulations, 2025",
+      "sub_reference": null,
+      "sentence": "appointed a registrar to an issue and share transfer agent registered under the Securities and Exchange Board of India (Registrars to an Issue and Share Transfer Agents) Regulations, 2025 and established parameters for their supervision;",
+      "source": "SEBI",
+      "pdf_path": "repository\\Securities_and_Exchange_Board_of_India_(Registrars_to_an_Issue_and_Share_Transfer_Agents)_Regulations,_2025.pdf",
+      "source_pdf_url": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/1766125665223.pdf"
+    }
+  ]
+}
