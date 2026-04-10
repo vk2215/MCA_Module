@@ -14,7 +14,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 client = MongoClient(os.getenv("MONGO_URI"))
-db = client["compliance_db_test"]
+db = client["compliance_db"]
 collection = db["knowledge_base"]
 ref_collection = db["regulation_references"]
 reference_details_coll = db["reference_details"]
