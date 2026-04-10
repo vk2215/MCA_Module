@@ -235,7 +235,8 @@
         }
 
         .reg-bold-highlight {
-            font-weight: 700 !important;
+            /*change*/
+            font-weight: normal !important;
             color: #1d4ed8 !important;
             /* MCA blue */
             text-decoration: underline !important;
@@ -250,7 +251,8 @@
 
         .hover-ref {
             color: #2563eb !important;
-            font-weight: 600 !important;
+            /*change*/
+            font-weight: normal !important;
             text-decoration: underline !important;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -388,7 +390,7 @@
         }
 
         .mca-bold-orange {
-            color: #ea580c;
+            color: #000000;
             /* Sharper orange */
             font-weight: bold;
         }
@@ -413,22 +415,14 @@
         .mca-authority-badge {
             background: #f0f7ff;
             color: #2563eb;
-            padding: 5px 14px;
+            padding: 8px 24px;
             border-radius: 4px;
-            font-size: 0.8rem;
+            font-size: 0.88rem;
             font-weight: 700;
-            display: inline-block;
+            display: block;
             width: fit-content;
-            margin: 0;
+            margin: 0 auto 20px auto;
             border: 1px solid #bfdbfe;
-        }
-
-        .mca-meta-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 0 25px 0;
-            width: 100%;
         }
 
         .source-line {
@@ -453,8 +447,8 @@
 
         .clause-num {
             font-weight: 700;
-            color: #ea580c;
-            /* Sharper orange */
+            color: #000000;
+            /* Changed from orange to black */
             flex: 0 0 50px;
             text-align: left;
             padding-right: 5px;
@@ -842,6 +836,8 @@
                             .then(d => {
                                 // --- Priority-based Content Selector ---
                                 let rawContent = '';
+
+
                                 if (d.extracted_details?.extracted_definition || d.extracted_definition) {
                                     rawContent = (d.extracted_details?.extracted_definition || d.extracted_definition);
                                 } else if (d.extracted_details?.verbatim || d.verbatim) {
@@ -850,13 +846,14 @@
                                     const sourceText = d.sentence || d.sub_reference || 'Details are being indexed.';
                                     rawContent = `Displaying original context sentence (formal definition currently missing in source):\n\n${sourceText}`;
                                 }
-                                // Refined to only target markers at the start of lines to avoid splitting headers like "Section 11(2)(c)"
-                                const markerRegex = /(^|\n)\s*(\d+\([a-z]{1,2}\)|\(\d+\)|\([a-z]\)|[a-z]\.\s+|\([ivxlcdm]+\)|Explanation:|Provided that:?)/gi;
+
+                                // Expand Regex to capture complex markers like (ab), (i), (A), and handle inline markers
+                                const markerRegex = /(^|\n|[\.;!]\s+)\s*(\d+\([a-z]{1,2}\)|\(\d+\)|\([a-z]{1,2}\)|[a-z]\.\s+|\([ivxlcdm]+\)|\([A-Z]\)|Explanation:|Provided that:?)/gi;
 
                                 let cleanInput = rawContent.replace(/\s+$/gm, '').replace(/\r/g, '');
                                 // We split keep the separator to capture the newline and the marker
                                 let parts = cleanInput.split(markerRegex);
-                                let htmlFragments = []; // Start empty without the 'Requested Section' header
+                                let htmlFragments = [];
 
                                 let currentMarker = '';
                                 let currentBuffer = '';
@@ -873,21 +870,23 @@
                                     let type = 'numeric'; // (1)
                                     if (/^\([ivxlcdm]+\)/.test(val)) type = 'roman'; // (i)
                                     else if (isCaps) type = 'caps'; // (A)
-                                    else if (/^\([a-z]{1,3}\)/.test(val)) type = 'alpha'; // (a)
+                                    else if (/^\([a-z]{1,3}\)/.test(val)) type = 'alpha'; // (a), (ab)
                                     else if (/^explanation|^provided/i.test(val)) type = 'special';
 
-                                    // Hierarchy Definition (Standard Legal Flow)
-                                    // Typically: Numeric -> Alpha -> Roman -> Alpha-Caps -> Sub-Numeric
-                                    // BUT some acts (Companies Act) are: Numeric -> Roman -> Alpha -> Numeric
+                                    // Special case: Explanation/Note resets hierarchy
+                                    if (type === 'special') {
+                                        hierarchyContext = [];
+                                        return 0;
+                                    }
 
-                                    // We'll use a dynamic depth based on the stack
-                                    if (type === 'special') return 0;
-
-                                    // If we see a marker type we've seen before, we reset the stack to that level
+                                    // Hierarchy Logic
+                                    // If we see a type we've seen, we reset to that level.
+                                    // If nested deeper, we push.
                                     const existingIdx = hierarchyContext.indexOf(type);
                                     if (existingIdx !== -1) {
                                         hierarchyContext = hierarchyContext.slice(0, existingIdx + 1);
                                     } else {
+                                        // If it's a new sub-level, push it
                                         hierarchyContext.push(type);
                                     }
 
@@ -914,7 +913,7 @@
 
                                         htmlFragments.push(`
                                             <div class="clause-line" style="margin-bottom: 12px; display: flex; align-items: flex-start; padding-left: ${padding}px; padding-right: 20px;">
-                                                <div class="clause-num" style="min-width: 50px; flex-shrink: 0; font-weight: 700; color: #ea580c; font-size: 0.92rem;">${currentMarker}</div>
+                                                <div class="clause-num" style="min-width: 50px; flex-shrink: 0; font-weight: 700; color: #000000; font-size: 0.92rem;">${currentMarker}</div>
                                                 <div class="clause-text" style="flex-grow: 1; margin-right: 15px;">${processedContent}</div>
                                             </div>
                                         `);
@@ -962,13 +961,13 @@
                                     ? `<div class="mca-authority-badge">${metadataParts.join(' | ')}</div>`
                                     : '';
 
-                                 const pdfLinkBlock = d.source_pdf_url ? `
-                                    <div style="margin: 0;">
+                                const pdfLinkBlock = d.source_pdf_url ? `
+                                    <div style="text-align: center; margin-top: -12px; margin-bottom: 20px;">
                                         <a href="${d.source_pdf_url}" target="_blank" class="mca-blue-link" 
-                                           style="font-size: 0.78rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 5px 12px; border: 1px solid #bfdbfe; border-radius: 4px; background: #fff; transition: all 0.2s;"
+                                           style="font-size: 0.82rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 4px 12px; border: 1px solid #bfdbfe; border-radius: 4px; background: #fff; transition: all 0.2s;"
                                            onmouseover="this.style.background='#f0f7ff'; this.style.borderColor='#2563eb'"
                                            onmouseout="this.style.background='#fff'; this.style.borderColor='#bfdbfe'">
-                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                                                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                                             </svg>
@@ -1008,10 +1007,8 @@
                                             </div>
                                             
                                             <div class="mca-header-title">${d.reference || 'Legal Reference'}</div>
-                                            <div class="mca-meta-row">
-                                                ${authorityBlock}
-                                                ${pdfLinkBlock}
-                                            </div>
+                                            ${authorityBlock}
+                                            ${pdfLinkBlock}
                                             
                                             <div id="mca-modal-body" style="margin-bottom: 30px;">
                                                 ${htmlFragments.join('')}
