@@ -13,11 +13,8 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-client = MongoClient(os.getenv("MONGO_URI"))  # original — works on other machines
-# macOS SSL fix (local only — revert before deploying):
-# import certifi
-# client = MongoClient(os.getenv("MONGO_URI"), tlsCAFile=certifi.where())
-db = client["compliance_db"]
+client = MongoClient(os.getenv("MONGO_URI"))
+db = client["compliance_db_test"]
 collection = db["knowledge_base"]
 ref_collection = db["regulation_references"]
 reference_details_coll = db["reference_details"]
@@ -242,10 +239,19 @@ def get_chapter_content(chapter_name: str):
     for clean_name, records in ref_map.items():
         # Prepare name regex to allow line breaks between words
         name_pattern_str = r'[\s\n]+'.join([re.escape(w) for w in clean_name.split()])
+
+        # Robust prefix to capture Section/Clause references before the Act name (supports multi-level)
+        # Examples: "Section 2(1)(a) of the...", "clause (bb) of sub-regulation 2 in..."
+        prefix_pat = r'(?:(?:(?:section|regulation|reg|rule|clause|sub-clause|sub-regulation|sub\s+regulation|chapter|schedule|part|annexure)\s+[\w\d\(\)\-\.\s,]+?)\s+(?:of|in|under|to)\s+(?:the\s+)?)*'
         
+        # Optional Act Identifier (e.g. "(15 of 1992)", "(1 of 1956)")
+        act_id_pat = r'(?:\s*\([\d\s]+(?:of|in|and|&|or|–|\-)\s*[\d\s]+\))?'
+        
+        # Optional suffix (e.g., "(Section 2)", ", Section 2")
+        suffix_pat = r'(?:\s*[,]?\s+\(?(?:section|regulation|reg|rule|clause|sub-clause|sub-regulation|sub\s+regulation|chapter|schedule|part)\s+[\w\d\(\)\-\.\s,]+?\)?)?'
+
         # Find every occurrence of this name in the chapter text
-        # Using reversed to avoid offset issues
-        matches = list(re.finditer(rf'(?<!\w)({name_pattern_str})(?!\w)(?![^<]*>)', full_text, re.I))
+        matches = list(re.finditer(rf'(?<!\w)({prefix_pat}{name_pattern_str}{act_id_pat}{suffix_pat})(?!\w)(?![^<]*>)', full_text, re.I))
         
         for m in reversed(matches):
             start, end = m.span()
@@ -278,6 +284,8 @@ def get_chapter_content(chapter_name: str):
         if not isinstance(ref_text, str): continue
         words = ref_text.split()
         if not words: continue
+        regex_pattern = r'[\s\n]+'.join([re.escape(w) for w in words])
+        pattern = re.compile(rf'(?<!\w)({regex_pattern})(?!\w)(?![^<]*>)', re.IGNORECASE)
         # Using index as interim ID for regs since they aren't uniquely in a DB collection here
         full_text = pattern.sub(lambda m: get_replacement(m, f"reg_{idx}", "reg"), full_text)
     """
@@ -473,6 +481,4 @@ def get_reference_details(ref_id: str):
         result['verbatim'] = result['extracted_details'].get('extracted_definition') # Fallback
     
     return result
-
-
 
